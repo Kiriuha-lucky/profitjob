@@ -1,0 +1,106 @@
+@@include('partials/head.html', {
+"title": "Добавить сотрудника"
+})
+<div class="menu-wrapper no-mob">
+	@@include('partials/menu6.html', {})
+</div>
+
+<section class="single personal2">
+	<div class="container">
+		<div class="mob-back row row-space">
+			<a href="">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15 18L9 12L15 6" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</a>
+			<h2 class="title">Добавить сотрудника</h2>
+
+		</div>
+		<div class="columns__right recommend">
+
+			<form>
+				<div class="item item-full">
+					<div class="recommend__top row">
+						<a href="" class="item__back">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+
+						</a>
+						<h2>Добавить сотрудника</h2>
+					</div>
+					<div class="item__top row">
+						<div class="item__top__left">
+							<div class="recommend__form__grid">
+								<label class="recommend-input">
+									<span>
+										Имя
+									</span>
+									<input type="text">
+
+								</label>
+								<label class="recommend-input">
+									<span>
+										Фамилия
+									</span>
+									<input class="link" type="text">
+								</label>
+								<label class="recommend-input">
+									<span>
+										Телефон
+									</span>
+									<input type="text">
+								</label>
+								<label class="recommend-input">
+									<span>
+										Email
+									</span>
+									<input type="text">
+								</label>
+								<label class="recommend-input">
+									<span>
+										Локация
+									</span>
+									<input type="text">
+								</label>
+								<label class="recommend-input">
+									<span>
+										Должность
+									</span>
+									<div class="sel">
+										<select>
+											<option value="Модератор">Модератор</option>
+											<option value="Сорсер">Сорсер</option>
+											<option value="SMM-специалист">SMM-специалист</option>
+											<option value="Модератор">Модератор</option>
+										</select>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="item__managers__top item__managers__radio">
+						<p>Права доступа</p>
+						<label class="radio-slice">
+							<input type="checkbox" name="radio1">
+						</label>
+					</div>
+					<div class="item__managers__btns row">
+						<button class="btn btn-grey">Отменить</button>
+						<button class="btn btn-orange">Сохранить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+
+@@include('partials/footer2.html', {})
+@@include('partials/scripts.html', {})

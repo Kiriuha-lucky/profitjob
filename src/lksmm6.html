@@ -1,0 +1,138 @@
+@@include('partials/head.html', {
+"title": "Редактировать"
+})
+<div class="menu-wrapper no-mob">
+	@@include('partials/menu4.html', {})
+</div>
+
+<section class="single">
+	<div class="container">
+		<div class="mob-back row row-space">
+			<a href="">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15 18L9 12L15 6" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</a>
+			<h2 class="title">Редактировать</h2>
+
+		</div>
+		<div class="columns__right recommend">
+			<div class="item item-full">
+				<div class="recommend__top row">
+					<a href="" class="item__back">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+
+					</a>
+					<h2>Редактировать</h2>
+				</div>
+
+				<div class="recommend__form smm-form">
+
+					<form>
+						<label class="smm-form__upload">
+							<input type="file">
+							<div class="smm-form__upload__img">
+								<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_492_2162)">
+										<path
+											d="M28 0C20.5756 0 13.4487 2.95181 8.20312 8.20094C2.95209 13.4521 0.00145456 20.5738 0 28C0 35.4231 2.95312 42.5499 8.20312 47.7991C13.4487 53.0482 20.5756 56 28 56C35.4244 56 42.5513 53.0482 47.7969 47.7991C53.0469 42.5499 56 35.4231 56 28C56 20.5769 53.0469 13.4501 47.7969 8.20094C42.5513 2.95181 35.4244 0 28 0Z"
+											fill="#FCC722" />
+										<path d="M34 34L28 28L22 34" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path d="M28 28V41.5" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M40.5852 37.5852C42.0482 36.7876 43.2039 35.5255 43.87 33.9982C44.5361 32.4708 44.6745 30.7651 44.2635 29.1503C43.8525 27.5354 42.9154 26.1035 41.6002 25.0804C40.285 24.0573 38.6665 23.5013 37.0002 23.5002H35.1102C34.6562 21.7441 33.8099 20.1137 32.6351 18.7317C31.4603 17.3497 29.9875 16.252 28.3273 15.5211C26.6672 14.7903 24.863 14.4453 23.0504 14.512C21.2377 14.5788 19.4638 15.0557 17.862 15.9067C16.2601 16.7578 14.8721 17.9609 13.8021 19.4256C12.7322 20.8903 12.0082 22.5785 11.6847 24.3633C11.3611 26.1481 11.4463 27.983 11.934 29.7301C12.4217 31.4772 13.299 33.091 14.5002 34.4502"
+											stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M34 34L28 28L22 34" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0_492_2162">
+											<rect width="56" height="56" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<span>Добавить обложку</span>
+						</label>
+						<div class="recommend__form__grid recommend__form__grid-smm">
+							<label class="recommend-input">
+								<span>
+									Название
+								</span>
+								<input type="text">
+							</label>
+							<label class="recommend-input">
+								<span>
+									Тема
+								</span>
+								<label class="sel">
+									<select>
+										<option value="Рекрутинг">Рекрутинг</option>
+										<option value="Рекрутинг 2">Рекрутинг 2</option>
+									</select>
+								</label>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Время чтения
+								</span>
+								<div class="sel">
+									<select>
+										<option value="15 минут">15 минут</option>
+										<option value="30 минут">30 минут</option>
+									</select>
+								</div>
+							</label>
+						</div>
+						<div class="recommend__textarea recommend-input">
+							<span>
+								Пост
+							</span>
+							<textarea></textarea>
+						</div>
+
+
+						<div class="recommend__form__bottom row recommend__form__bottom-smm">
+							<a data-fancybox data-src="#login-content1" class="btn btn-red">Удалить пост</a>
+							<a href="" class="btn btn-orange">Сохранить</a>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="popup-decline popup-login popup-faq" id="login-content1">
+	<div class="popup-decline__top row">
+		<a href="" class="back">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</a>
+		<div class="popup-decline__title">
+			Вы действительно хотите <br> удалить пост?
+		</div>
+	</div>
+
+	<div class="popup-decline__wrapper row">
+
+		<button class="btn btn-grey">Отменить</button>
+		<button class="btn btn-red">Удалить</button>
+
+	</div>
+</div>
+
+@@include('partials/footer2.html', {})
+@@include('partials/scripts.html', {})

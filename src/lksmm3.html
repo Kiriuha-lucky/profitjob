@@ -1,0 +1,213 @@
+@@include('partials/head.html', {
+"title": "Вопросы и ответы"
+})
+<div class="menu-wrapper">
+	@@include('partials/menu4.html', {})
+</div>
+
+<section class="columns faq">
+	<div class="container row">
+		@@include('partials/leftmenu5.html', {
+		"title": "Вопросы и ответы"
+		})
+		<div class="columns__right">
+			<div class="columns__menu__right">
+				<button class="faq-new row">
+					Новый вопрос
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10 4.16797V15.8346" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M4.16699 10H15.8337" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="faq__wrapper">
+				<div class="faq__item edit row">
+					<div class="faq__item__left">
+						<div class="faq__item__title recommend-input">
+							<span>
+								Вопрос
+							</span>
+							<input type="text">
+						</div>
+						<div class="faq__item__text recommend-input">
+							<span>
+								Ответ
+							</span>
+							<input type="text">
+						</div>
+						<div class="faq__item__btns row">
+							<button class="btn btn-grey">Отменить</button>
+							<button class="btn btn-orange">Сохранить</button>
+						</div>
+					</div>
+					<button class="faq__item__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.16699 3.33203H3.33366C2.89163 3.33203 2.46771 3.50763 2.15515 3.82019C1.84259 4.13275 1.66699 4.55667 1.66699 4.9987V16.6654C1.66699 17.1074 1.84259 17.5313 2.15515 17.8439C2.46771 18.1564 2.89163 18.332 3.33366 18.332H15.0003C15.4424 18.332 15.8663 18.1564 16.1788 17.8439C16.4914 17.5313 16.667 17.1074 16.667 16.6654V10.832"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M15.417 2.08417C15.7485 1.75265 16.1982 1.56641 16.667 1.56641C17.1358 1.56641 17.5855 1.75265 17.917 2.08417C18.2485 2.41569 18.4348 2.86533 18.4348 3.33417C18.4348 3.80301 18.2485 4.25265 17.917 4.58417L10.0003 12.5008L6.66699 13.3342L7.50033 10.0008L15.417 2.08417Z"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+				<div class="faq__item row">
+					<div class="faq__item__left">
+						<div class="faq__item__title">
+							Кто может выступать в качестве рекомендателя?
+						</div>
+						<div class="faq__item__text">
+							В качестве рекомендателя может выступать любой зарегистрированный пользователь
+						</div>
+					</div>
+					<button class="faq__item__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.16699 3.33203H3.33366C2.89163 3.33203 2.46771 3.50763 2.15515 3.82019C1.84259 4.13275 1.66699 4.55667 1.66699 4.9987V16.6654C1.66699 17.1074 1.84259 17.5313 2.15515 17.8439C2.46771 18.1564 2.89163 18.332 3.33366 18.332H15.0003C15.4424 18.332 15.8663 18.1564 16.1788 17.8439C16.4914 17.5313 16.667 17.1074 16.667 16.6654V10.832"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M15.417 2.08417C15.7485 1.75265 16.1982 1.56641 16.667 1.56641C17.1358 1.56641 17.5855 1.75265 17.917 2.08417C18.2485 2.41569 18.4348 2.86533 18.4348 3.33417C18.4348 3.80301 18.2485 4.25265 17.917 4.58417L10.0003 12.5008L6.66699 13.3342L7.50033 10.0008L15.417 2.08417Z"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+				<div class="faq__item row">
+					<div class="faq__item__left">
+						<div class="faq__item__title">
+							Кто может выступать в качестве рекомендателя?
+						</div>
+						<div class="faq__item__text">
+							В качестве рекомендателя может выступать любой зарегистрированный пользователь
+						</div>
+					</div>
+					<button class="faq__item__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.16699 3.33203H3.33366C2.89163 3.33203 2.46771 3.50763 2.15515 3.82019C1.84259 4.13275 1.66699 4.55667 1.66699 4.9987V16.6654C1.66699 17.1074 1.84259 17.5313 2.15515 17.8439C2.46771 18.1564 2.89163 18.332 3.33366 18.332H15.0003C15.4424 18.332 15.8663 18.1564 16.1788 17.8439C16.4914 17.5313 16.667 17.1074 16.667 16.6654V10.832"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M15.417 2.08417C15.7485 1.75265 16.1982 1.56641 16.667 1.56641C17.1358 1.56641 17.5855 1.75265 17.917 2.08417C18.2485 2.41569 18.4348 2.86533 18.4348 3.33417C18.4348 3.80301 18.2485 4.25265 17.917 4.58417L10.0003 12.5008L6.66699 13.3342L7.50033 10.0008L15.417 2.08417Z"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+				<div class="faq__item row">
+					<div class="faq__item__left">
+						<div class="faq__item__title">
+							Кто может выступать в качестве рекомендателя?
+						</div>
+						<div class="faq__item__text">
+							В качестве рекомендателя может выступать любой зарегистрированный пользователь
+						</div>
+					</div>
+					<button class="faq__item__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.16699 3.33203H3.33366C2.89163 3.33203 2.46771 3.50763 2.15515 3.82019C1.84259 4.13275 1.66699 4.55667 1.66699 4.9987V16.6654C1.66699 17.1074 1.84259 17.5313 2.15515 17.8439C2.46771 18.1564 2.89163 18.332 3.33366 18.332H15.0003C15.4424 18.332 15.8663 18.1564 16.1788 17.8439C16.4914 17.5313 16.667 17.1074 16.667 16.6654V10.832"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M15.417 2.08417C15.7485 1.75265 16.1982 1.56641 16.667 1.56641C17.1358 1.56641 17.5855 1.75265 17.917 2.08417C18.2485 2.41569 18.4348 2.86533 18.4348 3.33417C18.4348 3.80301 18.2485 4.25265 17.917 4.58417L10.0003 12.5008L6.66699 13.3342L7.50033 10.0008L15.417 2.08417Z"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+				<div class="faq__item row">
+					<div class="faq__item__left">
+						<div class="faq__item__title">
+							Кто может выступать в качестве рекомендателя?
+						</div>
+						<div class="faq__item__text">
+							В качестве рекомендателя может выступать любой зарегистрированный пользователь
+						</div>
+					</div>
+					<button class="faq__item__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.16699 3.33203H3.33366C2.89163 3.33203 2.46771 3.50763 2.15515 3.82019C1.84259 4.13275 1.66699 4.55667 1.66699 4.9987V16.6654C1.66699 17.1074 1.84259 17.5313 2.15515 17.8439C2.46771 18.1564 2.89163 18.332 3.33366 18.332H15.0003C15.4424 18.332 15.8663 18.1564 16.1788 17.8439C16.4914 17.5313 16.667 17.1074 16.667 16.6654V10.832"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M15.417 2.08417C15.7485 1.75265 16.1982 1.56641 16.667 1.56641C17.1358 1.56641 17.5855 1.75265 17.917 2.08417C18.2485 2.41569 18.4348 2.86533 18.4348 3.33417C18.4348 3.80301 18.2485 4.25265 17.917 4.58417L10.0003 12.5008L6.66699 13.3342L7.50033 10.0008L15.417 2.08417Z"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+				<div class="faq__item row">
+					<div class="faq__item__left">
+						<div class="faq__item__title">
+							Кто может выступать в качестве рекомендателя?
+						</div>
+						<div class="faq__item__text">
+							В качестве рекомендателя может выступать любой зарегистрированный пользователь
+						</div>
+					</div>
+					<button class="faq__item__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.16699 3.33203H3.33366C2.89163 3.33203 2.46771 3.50763 2.15515 3.82019C1.84259 4.13275 1.66699 4.55667 1.66699 4.9987V16.6654C1.66699 17.1074 1.84259 17.5313 2.15515 17.8439C2.46771 18.1564 2.89163 18.332 3.33366 18.332H15.0003C15.4424 18.332 15.8663 18.1564 16.1788 17.8439C16.4914 17.5313 16.667 17.1074 16.667 16.6654V10.832"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M15.417 2.08417C15.7485 1.75265 16.1982 1.56641 16.667 1.56641C17.1358 1.56641 17.5855 1.75265 17.917 2.08417C18.2485 2.41569 18.4348 2.86533 18.4348 3.33417C18.4348 3.80301 18.2485 4.25265 17.917 4.58417L10.0003 12.5008L6.66699 13.3342L7.50033 10.0008L15.417 2.08417Z"
+								stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="popup-decline" id="dialog-content1">
+	<div class="popup-decline__top row">
+		<a href="" class="back">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</a>
+		<div class="popup-decline__title">
+			Добавить раздел
+		</div>
+	</div>
+	<div class="popup-decline__wrapper">
+		<form>
+			<label class="sel recommend-input">
+				<span>
+					Название раздела
+				</span>
+				<input type="text">
+			</label>
+
+			<button class="btn btn-orange">Сохранить</button>
+		</form>
+	</div>
+</div>
+<div class="popup-decline popup-login popup-faq" id="login-content1">
+	<div class="popup-decline__top row">
+		<a href="" class="back">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</a>
+		<div class="popup-decline__title">
+			Уверены, что хотите удалить раздел?
+		</div>
+	</div>
+	<p>
+		При удалении раздела пользователи не смогут видеть его и вопросы в нем
+	</p>
+	<div class="popup-decline__wrapper row">
+
+		<button class="btn btn-grey">Отменить</button>
+		<button class="btn btn-orange">Подтвердить</button>
+
+	</div>
+</div>
+
+@@include('partials/footer2.html', {})
+@@include('partials/scripts.html', {})

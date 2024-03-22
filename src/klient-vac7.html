@@ -1,0 +1,386 @@
+@@include('partials/head.html', {
+"title": "Тинькофф"
+})
+<div class="menu-wrapper no-mob">
+	@@include('partials/menu5.html', {})
+</div>
+
+<section class="single mycompany mycompany2 klient6 klient7">
+	<div class="container">
+		<div class="mob-back row row-space mob-back__comp">
+			<a href="">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15 18L9 12L15 6" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</a>
+			<h2 class="title">Новая вакансия</h2>
+			<a href="" class="mycomp-menu__edit">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M11 3.99805H4C3.46957 3.99805 2.96086 4.20876 2.58579 4.58383C2.21071 4.95891 2 5.46761 2 5.99805V19.998C2 20.5285 2.21071 21.0372 2.58579 21.4123C2.96086 21.7873 3.46957 21.998 4 21.998H18C18.5304 21.998 19.0391 21.7873 19.4142 21.4123C19.7893 21.0372 20 20.5285 20 19.998V12.998"
+						stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+					<path
+						d="M18.5 2.50023C18.8978 2.1024 19.4374 1.87891 20 1.87891C20.5626 1.87891 21.1022 2.1024 21.5 2.50023C21.8978 2.89805 22.1213 3.43762 22.1213 4.00023C22.1213 4.56284 21.8978 5.1024 21.5 5.50023L12 15.0002L8 16.0002L9 12.0002L18.5 2.50023Z"
+						stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+		</div>
+		<div class="columns__right ">
+
+			<form>
+				<div class="item item-full">
+					<div class="recommend__top row">
+						<a href="" class="item__back">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+
+						</a>
+						<h2>Новая вакансия</h2>
+					</div>
+					<p class="item-full__descr">
+						Для размещения новой вакансии на платформе выберете один из трех вариантов: ссылка на описание
+						вакансии, документ с описанием позиции или форма для заполнения
+					</p>
+					<div class="item__top row">
+						<div class="item__top__left">
+
+							<div class="item__top__name">
+								Основные данные
+							</div>
+							<div class="klient7__row row">
+								<div class="klient7__col">
+									<label class="recommend-input error">
+										<span>
+											Название вакансии
+										</span>
+										<input type="text">
+										<div class="error-input">
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_588_10391)">
+													<path
+														d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"
+														stroke="#FF4747" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M6 4V6" stroke="#FF4747" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M6 8H6.005" stroke="#FF4747" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</g>
+												<defs>
+													<clipPath id="clip0_588_10391">
+														<rect width="12" height="12" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											Укажите название вакансии
+										</div>
+									</label>
+									<label class="recommend-input">
+										<span>
+											Специализация
+										</span>
+										<div class="sel">
+											<select>
+												<option value="1">Java Developer</option>
+												<option value="2">Java Developer 2</option>
+											</select>
+										</div>
+									</label>
+									<label class="recommend-input">
+										<span>
+											Специализация
+										</span>
+										<div class="sel">
+											<select id="special">
+												<option value="doc1">Ссылка на описание</option>
+												<option value="doc2">Документ-описание</option>
+												<option value="doc3">Форма для заполнения</option>
+											</select>
+										</div>
+									</label>
+									<label class="recommend-input active link-input" id="doc1">
+										<span>
+											Ссылка на описание
+										</span>
+										<input type="text" value="htttp://googledisk.descriptionvacancy/com">
+									</label>
+									<div class="recommend-input upload" id="doc2">
+										<span>
+											Документ-описание
+										</span>
+										<label>
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.6756 16.6993 2.5 16.2754 2.5 15.8333V12.5"
+													stroke="#336FEE" stroke-width="1.3" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M5.83268 8.33398L9.99935 12.5007L14.166 8.33398" stroke="#336FEE"
+													stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M10 12.5L10 2.5" stroke="#336FEE" stroke-width="1.3" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+											Загрузить
+											<input type="file">
+										</label>
+
+									</div>
+								</div>
+								<div class="klient7__col">
+									<label class="recommend-input">
+										<span>
+											Валюта зарплаты
+										</span>
+										<div class="sel">
+											<select>
+												<option value="1">Рубли</option>
+												<option value="2">Доллары</option>
+												<option value="3">Евро</option>
+											</select>
+										</div>
+									</label>
+									<div class="klient7__col__row recommend-input">
+										<span>Зарплатная вилка</span>
+										<div class="row">
+											<div class="sel">
+												<select>
+													<option value="1">150 000</option>
+													<option value="2">250 000</option>
+												</select>
+											</div>
+											<div class="sel">
+												<select>
+													<option value="1">250 000</option>
+													<option value="2">350 000</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<label class="check check-arr row" style="display: flex;">
+										<input type="checkbox" name="price">
+										<span>Примерная вилка для кандидатов</span>
+										<a class="ask-popup-trigger ask-trigger">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M7.96732 12.4997C8.20065 12.4997 8.39798 12.419 8.55932 12.2577C8.72065 12.0963 8.8011 11.8992 8.80065 11.6663C8.80065 11.433 8.72021 11.2357 8.55932 11.0743C8.39843 10.913 8.2011 10.8326 7.96732 10.833C7.73398 10.833 7.53687 10.9137 7.37598 11.075C7.2151 11.2363 7.13443 11.4335 7.13398 11.6663C7.13398 11.8997 7.21465 12.097 7.37598 12.2583C7.53732 12.4197 7.73443 12.5001 7.96732 12.4997ZM7.36732 9.93301H8.60065C8.60065 9.56634 8.64243 9.27745 8.72598 9.06634C8.80954 8.85523 9.04554 8.56634 9.43398 8.19967C9.72287 7.91079 9.95065 7.63567 10.1173 7.37434C10.284 7.11301 10.3673 6.79923 10.3673 6.43301C10.3673 5.81079 10.1395 5.33301 9.68398 4.99967C9.22843 4.66634 8.68954 4.49967 8.06732 4.49967C7.43398 4.49967 6.91998 4.66634 6.52532 4.99967C6.13065 5.33301 5.85576 5.73301 5.70065 6.19967L6.80065 6.63301C6.85621 6.43301 6.98132 6.21634 7.17598 5.98301C7.37065 5.74967 7.66776 5.63301 8.06732 5.63301C8.42287 5.63301 8.68954 5.73034 8.86732 5.92501C9.0451 6.11967 9.13398 6.33345 9.13398 6.56634C9.13398 6.78856 9.06732 6.99701 8.93398 7.19167C8.80065 7.38634 8.63398 7.56679 8.43398 7.73301C7.9451 8.16634 7.6451 8.49412 7.53398 8.71634C7.42287 8.93856 7.36732 9.34412 7.36732 9.93301ZM8.00065 15.1663C7.07843 15.1663 6.21176 14.9912 5.40065 14.641C4.58954 14.2908 3.88398 13.8159 3.28398 13.2163C2.68398 12.6163 2.2091 11.9108 1.85932 11.0997C1.50954 10.2886 1.33443 9.4219 1.33398 8.49967C1.33398 7.57745 1.5091 6.71079 1.85932 5.89967C2.20954 5.08856 2.68443 4.38301 3.28398 3.78301C3.88398 3.18301 4.58954 2.70812 5.40065 2.35834C6.21176 2.00856 7.07843 1.83345 8.00065 1.83301C8.92287 1.83301 9.78954 2.00812 10.6007 2.35834C11.4118 2.70856 12.1173 3.18345 12.7173 3.78301C13.3173 4.38301 13.7924 5.08856 14.1427 5.89967C14.4929 6.71079 14.6678 7.57745 14.6673 8.49967C14.6673 9.4219 14.4922 10.2886 14.142 11.0997C13.7918 11.9108 13.3169 12.6163 12.7173 13.2163C12.1173 13.8163 11.4118 14.2915 10.6007 14.6417C9.78954 14.9919 8.92287 15.1668 8.00065 15.1663ZM8.00065 13.833C9.48954 13.833 10.7507 13.3163 11.784 12.283C12.8173 11.2497 13.334 9.98856 13.334 8.49967C13.334 7.01079 12.8173 5.74967 11.784 4.71634C10.7507 3.68301 9.48954 3.16634 8.00065 3.16634C6.51176 3.16634 5.25065 3.68301 4.21732 4.71634C3.18398 5.74967 2.66732 7.01079 2.66732 8.49967C2.66732 9.98856 3.18398 11.2497 4.21732 12.283C5.25065 13.3163 6.51176 13.833 8.00065 13.833Z"
+													fill="#2B2B2B"></path>
+											</svg>
+											<div class="ask-popup" style="display: none;">
+												<p>На платформе будет отражена среднерыночная зарплатная вилка для похожих вакансий,
+													которую мы возьмем из аналитики зарплат в открытом доступе. Кандидаты не узнают
+													точных цифр, однако они пригодятся нам на этапе модерации, чтобы присылать вам
+													только релевантных кандидатов</p>
+											</div>
+										</a>
+									</label>
+									<label class="recommend-input">
+										<span>
+											Бонус за рекомендацию
+										</span>
+										<div class="sel">
+											<select>
+												<option value="1">50 000</option>
+												<option value="2">75 000</option>
+											</select>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div id="doc3">
+						<div class="item__top row ">
+							<div class="item__top__left">
+
+								<div class="item__top__name">
+									Требования
+								</div>
+								<div class="recommend__form__grid">
+									<div class="klient7__col__row recommend-input">
+										<span>Количество лет опыта</span>
+										<div class="row">
+											<div class="sel">
+												<select>
+													<option value="1">3</option>
+													<option value="2">5</option>
+												</select>
+											</div>
+											<div class="sel">
+												<select>
+													<option value="1">5</option>
+													<option value="2">8</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<label class="recommend-input">
+										<span>
+											Стек / Технологии
+										</span>
+										<div class="sel">
+											<select>
+												<option value="1">Java script, Spring, Agile</option>
+												<option value="2">Php</option>
+											</select>
+										</div>
+									</label>
+									<label class="recommend-input">
+										<span>
+											Локация
+										</span>
+										<div class="sel">
+											<select>
+												<option value="1">Санкт-Петерург</option>
+												<option value="2">Москва</option>
+											</select>
+										</div>
+									</label>
+									<label class="recommend-input">
+										<span>
+											Формат работы
+										</span>
+										<div class="sel">
+											<select>
+												<option value="1">Офис, гибрид</option>
+												<option value="2">Удалённо</option>
+											</select>
+										</div>
+									</label>
+									<label class="recommend-input">
+										<span>
+											Помощь с релокацией
+										</span>
+										<div class="sel">
+											<select>
+												<option value="1">Да</option>
+												<option value="2">Нет</option>
+											</select>
+										</div>
+									</label>
+
+
+								</div>
+							</div>
+
+
+						</div>
+						<div class="item__center">
+							<div class="item__top__name">
+								Детальное описание
+							</div>
+							<label class="recommend-input">
+								<span>
+									Описание компании
+								</span>
+								<textarea
+									rows="3">Тинькофф — аккредитованная ИТ-компания, которая создаёт аудиосервис, направленный на дополнение каждого момента жизни подходящим звуковым сопровождением: в смартфоне, машине, любимом кафе или галерее. Цель сервиса — стать аудиопривычкой современного человека. Миллионы треков, тысячи подкастов, персонализированные плейлисты и волны, генеративная музыка, онлайн-радио.</textarea>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Описание проекта (полное)
+								</span>
+								<textarea rows="3"></textarea>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Что делать? (описание для сокращенной карточки)
+								</span>
+								<textarea rows="3"></textarea>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Задачи
+								</span>
+								<textarea rows="3"></textarea>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Must have
+								</span>
+								<textarea rows="3"></textarea>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Nice to have
+								</span>
+								<textarea rows="3"></textarea>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Мы предлагаем
+								</span>
+								<textarea rows="3"></textarea>
+							</label>
+						</div>
+					</div>
+
+					<div class="klient7__manager" style="margin-top: 20px;">
+						<div class="klient-item__innerinfo__top row row-space">
+							<div class="item__top__name" style="margin-bottom: 0;">
+								Менеджер вакансии
+							</div>
+						</div>
+						<label class="recommend-input">
+							<span>
+								Выбрать менеджера
+							</span>
+							<div class="sel">
+								<select>
+									<option value="1">Петрова Кристина Александровна (@petrovaKris)</option>
+									<option value="2">Петрова Кристина Александровна 2</option>
+								</select>
+							</div>
+						</label>
+					</div>
+					<div class="item__managers__btns row">
+						<button class="btn btn-grey">Отменить</button>
+						<button class="btn btn-orange">Сохранить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="subscribe recommend2-subscribe" style="margin-bottom: 20px;">
+			<div class="subscribe__title">
+				Получайте уведомления об изменении статусов <br> ваших рекомендаций и новых вакансиях
+			</div>
+			<p>Бот сообщит об изменении статуса вашей рекомендации, <br>а также поможет найти новые вакансии для вас или
+				ваших кандидатов</p>
+			<a href="" class="subscribe__tg row">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_493_8325)">
+						<path
+							d="M12 0C8.81812 0 5.76375 1.26506 3.51562 3.51469C1.26518 5.76521 0.000623381 8.81734 0 12C0 15.1813 1.26562 18.2357 3.51562 20.4853C5.76375 22.7349 8.81812 24 12 24C15.1819 24 18.2362 22.7349 20.4844 20.4853C22.7344 18.2357 24 15.1813 24 12C24 8.81869 22.7344 5.76431 20.4844 3.51469C18.2362 1.26506 15.1819 0 12 0Z"
+							fill="url(#paint0_linear_493_8325)"></path>
+						<path
+							d="M5.43184 11.873C8.93059 10.349 11.2631 9.34424 12.4293 8.8588C15.7631 7.47261 16.455 7.23186 16.9068 7.2237C17.0062 7.22211 17.2275 7.24667 17.3718 7.36339C17.4918 7.46183 17.5256 7.59495 17.5425 7.68842C17.5575 7.7818 17.5781 7.99461 17.5612 8.16074C17.3812 10.0582 16.5993 14.6629 16.2018 16.7882C16.035 17.6874 15.7031 17.9889 15.3825 18.0184C14.685 18.0825 14.1562 17.5579 13.4812 17.1155C12.4256 16.4231 11.8293 15.9922 10.8037 15.3167C9.61872 14.5359 10.3875 14.1067 11.0625 13.4055C11.2387 13.2219 14.31 10.4291 14.3681 10.1758C14.3756 10.1441 14.3831 10.026 14.3118 9.96373C14.2425 9.9013 14.1393 9.92267 14.0643 9.93955C13.9575 9.96355 12.2718 11.0788 9.00184 13.2851C8.52372 13.614 8.09059 13.7743 7.70059 13.7659C7.27309 13.7567 6.44809 13.5236 5.83497 13.3245C5.08497 13.0802 4.48684 12.951 4.53934 12.536C4.56559 12.32 4.86372 12.099 5.43184 11.873Z"
+							fill="white"></path>
+					</g>
+					<defs>
+						<linearGradient id="paint0_linear_493_8325" x1="1200" y1="0" x2="1200" y2="2400"
+							gradientUnits="userSpaceOnUse">
+							<stop stop-color="#2AABEE"></stop>
+							<stop offset="1" stop-color="#229ED9"></stop>
+						</linearGradient>
+						<clipPath id="clip0_493_8325">
+							<rect width="24" height="24" fill="white"></rect>
+						</clipPath>
+					</defs>
+				</svg>
+				Добавить в Телеграм
+			</a>
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer2.html', {})
+@@include('partials/scripts.html', {})

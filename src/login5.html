@@ -1,0 +1,73 @@
+@@include('partials/head.html', {
+"title": "Вход"
+})
+<div class="menu-wrapper">
+	@@include('partials/menu-login.html', {})
+</div>
+
+<div class="login">
+	<div class="container">
+		<div class="login__plate">
+			<div class="login__plate__top row">
+				<a href="" class="login__plate__top__item ">Вход</a>
+				<a href="" class="login__plate__top__item active">Регистрация</a>
+			</div>
+			<div class="login__plate__form">
+				<form>
+
+					<div class="login__plate__form__item">
+						<span>Имя и фамилия</span>
+						<label>
+							<input type="text" placeholder="Имя и фамилия">
+						</label>
+					</div>
+					<div class="register-row row">
+						<div class="login__plate__form__item">
+							<span>Телефон</span>
+							<label>
+								<input type="tel" placeholder="Телефон" class="tel">
+							</label>
+						</div>
+						<div class="login__plate__form__item">
+							<span>Email</span>
+							<label>
+								<input type="email" placeholder="Email">
+							</label>
+						</div>
+					</div>
+
+
+					<label class="row check-text-block">
+						<input type="checkbox">
+						<div class="check-text">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20 6L9 17L4 12" stroke="black" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<p>Текст Нажимая на кнопку «Зарегистрироваться», вы даете согласие на обработку персональных данных и
+							соглашаетесь с <a href="">Политикой в отношении обработки персональных данных</a></p>
+					</label>
+					<div class="login-btns row">
+						<button class="btn btn-grey">Отмена</button>
+						<button class="btn btn-orange">Зарегистрироваться</button>
+					</div>
+
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+@@include('partials/footer2.html', {})
+@@include('partials/scripts.html', {})
+
+<script>
+	const element = document.querySelector('.tel');
+	const maskOptions = {
+		mask: '+{7} (000) 000-00-00'
+	};
+	const mask = IMask(element, maskOptions);
+</script>

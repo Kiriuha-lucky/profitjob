@@ -1,0 +1,3415 @@
+body
+	background: #F2F2F2
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+.input
+	border-radius: 24px
+	background: #FFF
+	border: none
+	padding: 8px 12px
+	font-size: 14px
+	display: block
+	&::placeholder
+		color: $text2
+.sel
+	width: 100%
+	display: block
+	position: relative
+	margin-bottom: 8px
+	// &::after
+	// 	content: ''
+	// 	position: absolute
+	// 	right: 12px
+	// 	top: 50%
+	// 	transform: translateY(-50%)
+	// 	background: url('../files/arrsel.svg') no-repeat center
+	// 	width: 24px
+	// 	height: 24px
+	select
+		width: 100%
+		padding: 14px 12px!important
+		background: #fff
+		border-radius: 50px
+		font-size: 14px
+		border: none
+		padding: 0
+		appearance: none
+		-webkit-appearance: none
+		-moz-appearance: none
+.recommend
+	select
+		padding: 9px 12px!important
+.recommend-input
+	display: block
+	width: 100%
+	.link
+		color: #336FEE
+	span
+		display: block
+		font-size: 14px
+		color: #6E6E73
+		margin-bottom: 5px
+	input, textarea, select, .selectize-control.single .selectize-input
+		padding: 8px 12px
+		background: #f5f7f9
+		border-radius: 30px
+		border: none
+		display: block
+		width: 100%
+		height: 40px
+		font-size: 16px
+	.selectize-control .item
+		background: none
+	.selectize-input
+		display: flex!important
+		align-items: center
+.btn-decline
+	background: #fff
+	color: #F75C5C
+	border: 1px solid #F75C5C
+	&:hover
+		background: #fff
+		color: #F75C5C
+.check
+	display: block
+	margin-bottom: 12px
+	position: relative
+	padding-left: 23px
+	cursor: pointer
+	&::after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-40%)
+		left: 0
+		width: 16px
+		height: 16px
+		background: #fff
+		border-radius: 50px
+		z-index: 1
+	input
+		position: absolute
+		left: 100%
+		z-index: -111
+		opacity: 0
+	span
+		padding-top: 2px
+		display: block
+.check.active
+	&::after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-40%)
+		left: 0
+		width: 16px
+		height: 16px
+		background: $orange
+		border-radius: 50px
+		border: 2px solid #fff
+footer
+	background: $text
+	color: #fff
+	padding: 36px 0 24px
+	margin-top: auto
+	.footer__top
+		justify-content: space-between
+		padding-bottom: 46px
+		a
+			color: #fff
+	.footer__col__title
+		font-size: 20px
+		font-weight: 600
+		margin-bottom: 24px
+	ul
+		li
+			&:not(:last-child)
+				margin-bottom: 16px
+		a
+			&:hover
+				color: $orange
+		.row
+			gap: 8px
+	.footer__bottom
+		padding-top: 24px
+		border-top: 1px solid #F2F2F2
+		p
+			margin-bottom: 10px
+		ul
+			li
+				font-size: 11px
+				padding-right: 12px
+				margin-right: 12px
+				&:not(:last-child)
+					border-right: 1px solid #F2F2F2
+			a
+				color: #fff
+				&:hover
+					color: $orange
+	.footer__logo__big
+		.footer__logo
+			margin-bottom: auto
+		.footer__logo__mail
+			margin-top: 56px
+			margin-bottom: 16px
+		li.row
+			gap: 8px
+.login-footer
+	.footer__top
+		gap: 56px
+		.footer__logo__big
+			margin-right: auto
+.menu
+	background: #fff
+	margin: 0
+	margin-bottom: 56px
+	padding: 24px 0
+	.container
+		align-items: center
+		overflow: visible
+	.login-open
+		svg
+			margin-left: 5px
+		a
+			display: flex
+			align-items: center
+			&:hover
+				svg
+					path
+						stroke: $orange
+	a
+		color: $text
+		&:hover
+			color: $orange
+	&__right
+		gap: 24px
+		align-items: center
+		li
+			position: relative
+	&__num
+		font-size: 8px
+		font-style: normal
+		font-weight: 400
+		background: $orange
+		border-radius: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 12px
+		height: 12px
+		position: absolute
+		right: -12px
+		top: -0px
+	.active
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			bottom: -8px
+			width: 100%
+			height: 1px
+			background: #FCC722
+	&-profile
+		a
+			gap: 8px
+			align-items: center
+		img
+			width: 24px
+			height: 24px
+			border-radius: 100px
+			object-fit: cover
+.left-menu
+	border-radius: 24px
+	background: #EAECEE
+	margin-right: 20px
+	padding: 32px 24px
+	width: 413px
+	min-width: 413px
+	position: sticky
+	top: 0
+	height: 100%
+	.search
+		padding: 8px 13px
+		height: auto
+		input
+			font-size: 14px
+			background: none
+		.btn
+			padding: 4px 12px
+	.btn
+		font-size: 14px
+	&__title
+		font-size: 20px
+		font-style: normal
+		font-weight: 600
+		margin-bottom: 8px
+	&__col
+		margin-bottom: 24px
+	.left-menu__range
+		margin-top: 12px
+	.irs
+		margin-top: -20px
+	&__range
+		align-items: center
+		.input
+			display: inline-block
+			width: 45%
+			&:nth-child(2)
+				margin-right: 16px
+		span
+			font-size: 14px
+			display: block
+			margin-right: 8px
+	&__ads
+		margin-top: 56px
+		background: #fff
+		border-radius: 18px
+		padding: 32px 24px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		&__title
+			font-size: 24px
+			font-style: normal
+			font-weight: 700
+			text-align: center
+			margin: 0 auto 12px
+		&__link
+			color: #336FEE
+			font-size: 20px
+			font-style: normal
+			font-weight: 600
+			margin-bottom: 8px
+			text-align: center
+		p
+			margin-bottom: 8px
+			text-align: center
+		&__tg
+			color: #336FEE
+			margin-top: 24px
+			font-size: 20px
+			font-style: normal
+			font-weight: 400
+			align-items: center
+			gap: 8px
+.chips
+	border: 1px solid $text
+	border-radius: 50px
+	padding: 8px 16px
+	cursor: pointer
+	font-size: 15px
+	input
+		position: absolute
+		left: 100%
+		z-index: -111
+		opacity: 0
+	&:hover
+		transform: translateY(-3px)
+.chips.active
+	background: $text
+	color: #fff
+.chips__col
+	display: flex
+	flex-wrap: wrap
+	gap: 16px
+.item
+	background: #fff
+	padding: 32px
+	border-radius: 24px
+	margin-bottom: 24px
+	width: 100%
+	&__links
+		gap: 8px
+		margin-top: 12px
+	&__title
+		font-size: 24px
+		font-weight: 600
+		margin-bottom: 4px
+	.item__job__link
+		margin-top: 4px
+		color: $blue
+		align-items: center
+		svg
+			margin-right: 5px
+	&__info
+		padding-bottom: 16px
+		margin-bottom: 16px
+		border-bottom: 1px solid #F2F2F2
+	&__info__right
+		a
+			color: #6E6E73
+	&__info__name
+		font-size: 28px
+		font-style: normal
+		font-weight: 600
+	&__top
+		&__right
+			margin-left: auto
+		&__download
+			border-radius: 120px
+			background: #F2F2F2
+			width: 72px
+			height: 40px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-left: auto
+			svg
+				@include trans
+			&:hover
+				svg
+					transform: translateY(-2px)
+					@include trans
+		&__prof
+			color: #336FEE
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+			&:hover
+				color: #336FEE
+		&__name
+			font-weight: 700
+	&__row
+		margin-top: 16px
+		p
+			margin-bottom: 12px
+		&__title
+			margin-bottom: 12px
+			font-weight: 700
+		ul
+			padding-left: 30px
+		li
+			margin-bottom: 3px
+			display: list-item
+	&__bottom
+		margin-top: 24px
+		align-items: center
+		&__btns
+			gap: 24px
+	&__date
+		font-size: 12px
+		margin-left: auto
+	.item__full__logo
+		margin-top: 24px
+		border-radius: 18px
+		width: 124px
+		height: 124px
+		object-fit: cover
+	.item__min__logo
+		width: 56px
+		height: 56px
+		img
+			width: 100%
+			height: 100%
+	.item__back
+		margin-bottom: 24px
+	.ask-popup-trigger
+		margin-left: 4px
+		width: 16px
+		height: 16px
+		margin-top: 2px
+		cursor: pointer
+		position: relative
+		font-style: normal
+		&:hover
+			color: $text
+	.popup-row
+		margin-bottom: 8px
+		position: relative
+		font-style: italic
+	.popup-row-normal
+		font-style: normal
+	.ask-popup
+		position: absolute
+		width: 250px
+		padding: 16px
+		border-radius: 24px
+		background: #F2F2F2
+		left: 50%
+		transform: translateX(-50%)
+		font-size: 12px
+		display: none
+		li
+			margin-bottom: 5px
+	&__history
+		margin-top: 16px
+		&__row
+			margin-top: 12px
+			align-items: center
+			span
+				margin-right: 12px
+			&__why
+				color: #6E6E73
+				font-size: 12px
+				margin-left: 8px
+
+.item-full
+	.item__top
+		padding-bottom: 16px
+		border-bottom: 1px solid #F2F2F2
+.columns
+	.container
+		height: 100%
+		overflow: visible
+	&__right
+		width: 100%
+.search
+	background: #fff
+	padding: 12px 16px
+	border-radius: 24px
+	align-items: center
+	margin-bottom: 24px
+	input
+		margin-left: 5px
+		font-size: 16px
+		width: 100%
+		border: none
+		background: none
+		margin-right: 10px
+		&::placeholder
+			color: #6E6E73
+.tags
+	display: flex
+	flex-wrap: wrap
+	gap: 8px
+.tag
+	padding: 4px 8px
+	border-radius: 20px
+	background: #000
+	background: #ECF1F7
+	font-size: 12px
+	&:hover
+		color: $text
+.tag.orange
+	background: #F1EBD6
+.tag.green
+	background: #ECF7F0
+.tag.red
+	background: #F1D6D6
+.red-color
+	color: #F75C5C
+.subscribe
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 400px
+	margin: 0 auto
+	&__title
+		text-align: center
+		font-size: 36px
+		font-style: normal
+		font-weight: 600
+		line-height: 40px
+		margin-bottom: 12px
+	form
+		width: 100%
+		margin-bottom: 12px
+	.input
+		padding: 12px 16px
+		font-size: 20px
+		width: 100%
+		margin-bottom: 24px
+		border-radius: 8px
+	.btn
+		width: 100%
+		font-size: 15px
+		font-weight: 700
+	p
+		text-align: center
+		color: $text2
+		font-size: 16px
+		font-style: normal
+		font-weight: 400
+.irs > .irs
+	span
+		display: none
+	.irs-line
+		background-color: #ffffff
+		display: block
+.irs--round .irs-bar
+	background: $orange
+.irs--round .irs-handle
+	border: none
+	width: 12px
+	height: 12px
+	background-color: $orange
+	top: 32px
+	box-shadow: none
+	&:hover
+		background-color: $orange
+.similar
+	&__company
+		color: #336FEE
+		font-size: 16px
+		font-style: normal
+		font-weight: 700
+		line-height: 21.001px
+		margin-bottom: 8px
+	&__top
+		margin-bottom: 36px
+		align-items: center
+	&__title
+		font-size: 28px
+		font-style: normal
+		font-weight: 700
+	&__all
+		font-size: 16px
+		font-style: normal
+		font-weight: 400
+		color: #6E6E73
+	&__item
+		border-radius: 18px
+		background: #EAECEE
+		padding: 16px
+		margin-bottom: 16px
+		&__logo
+			margin-right: 16px
+			display: flex
+			align-items: center
+			justify-content: center
+			img
+				width: 56px
+				height: 56px
+				border-radius: 100px
+				object-fit: cover
+		&__name
+			font-size: 20px
+			font-style: normal
+			font-weight: 600
+			margin-bottom: 8px
+		p
+			margin-bottom: 8px
+		&__descr
+			color: #6E6E73
+			strong
+				color: $text
+		&__right
+			color: $blue
+			align-items: center
+			height: fit-content
+			gap: 8px
+			margin-left: auto
+.success-plate
+	margin: 0 auto
+	border-radius: 24px
+	background: #fff
+	padding: 12px
+	padding-bottom: 32px
+	max-width: 364px
+	width: 100%
+	margin-bottom: 54px
+	p
+		text-align: center
+		margin-bottom: 24px
+	&__wrapper
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__title
+		margin: 16px 0 24px
+		font-size: 24px
+		font-style: normal
+		text-align: center
+		font-weight: 600
+	&__close
+		margin-left: auto
+		width: 100%
+		text-align: right
+	.btn
+		text-align: center
+		width: 100%
+		&:not(:last-child)
+			margin-bottom: 16px
+	.success__bottom
+		text-align: center
+		a
+			color: $blue
+			display: inline-block
+	.success__notlink
+		margin-bottom: 8px
+.single
+	margin-bottom: 56px
+.search-mob
+	display: none
+.mob-back
+	display: none
+.mobile-menu
+	display: none
+.recommend
+	max-width: 850px
+	margin-left: auto
+	margin-right: auto
+	&__top
+		margin-bottom: 24px
+		h2
+			font-size: 28px
+			font-weight: 600
+			text-align: center
+			margin: 0 auto
+		.item__back
+			margin-bottom: 0
+	&__form
+		margin-top: 16px
+		&__top
+			text-align: center
+			max-width: 500px
+			margin: 0 auto 24px
+		&__title
+			font-weight: 700
+			margin-bottom: 10px
+		&__grid
+			display: grid
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 16px 36px
+			padding-bottom: 16px
+			border-bottom: 1px solid #F2F2F2
+			margin-bottom: 16px
+		&__politics
+			margin-bottom: 24px
+			p
+				color: $text2
+				a
+					color: $text2
+					display: inline-block
+					text-decoration: underline
+			span
+				margin-left: 8px
+			.check
+				&::after
+					border-radius: 8px
+					background: #f5f7f9
+					width: 24px
+					height: 24px
+			.check.active
+				&::after
+					background: $orange
+					border: 5px solid #f5f7f9
+		&__bottom
+			align-items: center
+
+	&__upload
+		padding: 32px 24px
+		border-radius: 16px
+		background: #F5F7F9
+		margin-bottom: 16px
+		p
+			text-align: center
+			font-size: 16px
+			margin-bottom: 24px
+		&__top
+			margin-bottom: 16px
+			cursor: pointer
+			text-align: center
+			display: block
+			span
+				display: block
+				font-size: 28px
+				font-style: normal
+				font-weight: 700
+			input
+				position: absolute
+				left: -100%
+				opacity: 0
+				z-index: -111
+		&__descr
+			margin-bottom: 16px
+			color: $text2
+			padding-left: 24px
+			li
+				display: list-item
+				margin-bottom: 4px
+		.recommend-input
+			input
+				background: #fff
+	&__form__grid__bottom
+		padding-bottom: 16px
+		margin-bottom: 16px
+		border-bottom: 1px solid #F2F2F2
+		display: flex
+		gap: 36px
+		textarea
+			height: 96px
+			border-radius: 24px
+		select
+			font-size: 14px
+			color: #6E6E73
+.btn-black
+	width: 50%
+	margin-left: auto
+	text-align: center
+	font-size: 15px
+.recommend2-subscribe
+	border-radius: 18px
+	background: #E2E8F0
+	padding: 32px
+	max-width: 100%
+	.subscribe__title
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		line-height: 28px
+	p
+		color: $text
+	.subscribe__tg
+		align-items: center
+		border-radius: 8px
+		background: #FFF
+		font-size: 16px
+		padding: 16px 32px
+		color: $blue
+		margin-top: 24px
+		font-size: 24px
+		svg
+			margin-right: 8px
+.item__top__download2
+	color: $blue
+	cursor: pointer
+	svg
+		margin-right: 4px
+.ask-popup
+	color: $text
+.item__moder
+	.item__bottom__btns
+		border-bottom: 1px solid #F2F2F2
+		padding-bottom: 12px
+		width: 100%
+		margin-bottom: 24px
+		margin-top: 24px
+		.btn-del
+			margin-left: auto
+	.ask-popup
+		width: auto
+		max-width: 400px
+		p, li
+			font-size: 16px
+			font-weight: 400
+		.item__row__title
+			font-size: 16px
+	&__person
+		&__item
+			margin-bottom: 24px
+		&__top
+			margin-bottom: 12px
+			display: flex
+			align-items: center
+			gap: 4px
+			p
+				font-weight: 700
+			span
+				font-size: 14px
+				color: $text2
+	.item__date
+		display: block
+		margin: 0
+.item__moder__person__bottom
+	align-items: center
+	span
+		&:last-child
+			margin-left: auto
+.item__status.red
+	color: #F75C5C
+.item__row__data
+	display: flex
+	gap: 56px
+	flex-wrap: wrap
+	span
+		color: #6E6E73
+		font-size: 14px
+		margin-bottom: 3px
+.popup-decline
+	background: #fff
+	padding: 32px 36px
+	border-radius: 24px
+	max-width: 540px
+	margin: 0 auto
+	display: none
+	width: 100%
+	.back
+		height: 18px
+	&__top
+		align-items: center
+		margin-bottom: 24px
+	&__title
+		font-size: 28px
+		font-weight: 600
+		margin-left: auto
+		margin-right: auto
+	&__wrapper
+		justify-content: center
+	.recommend-input
+		margin-bottom: 24px
+		.selectize-control.single .selectize-input
+			background: #f5f7f9
+		.item
+			background: none
+		select
+			font-size: 14px
+			padding: 13px 12px!important
+		textarea
+			height: 88px
+			font-size: 14px
+			border-radius: 24px
+	.sel::after
+		top: 65%
+	.btn
+		width: 86%
+		margin: 0 auto
+		display: block
+.left-menu__wrapper
+	.left-menu
+		height: auto
+	h2
+		margin-bottom: 36px
+.columns__menu__right
+	margin-bottom: 36px
+	gap: 30px
+	border-bottom: 2px solid #EAECEE
+	span
+		margin-left: 8px
+		font-size: 14px
+		font-weight: 400
+		background: $orange
+		padding: 0px 8px
+		border-radius: 20px
+		display: block
+		height: fit-content
+	a
+		display: flex
+		align-items: center
+	.active
+		border-bottom: 2px solid $orange
+		padding-bottom: 7px
+	li
+		font-size: 20px
+		font-style: normal
+		font-weight: 600
+		&:nth-child(2)
+			span
+				background: #EAECEE
+		&:nth-child(3)
+			span
+				background: #f75c5c
+				color: #fff
+		&:nth-child(4)
+			span
+				background: #EAECEE
+		&:hover
+			span
+				transform: translateY(-3px)
+.item__doc
+	img
+		width: 100%
+		height: 336px
+		border-radius: 18px
+		object-fit: cover
+	embed
+		width: 100%
+		height: 336px
+		border-radius: 18px
+		overflow: auto
+
+.login
+	margin-bottom: 56px
+	h2
+		text-align: center
+	&__plate
+		background: #fff
+		padding: 32px 32px 32px 36px
+		border-radius: 24px
+		max-width: 544px
+		width: 100%
+		margin: 0 auto
+		&__top
+			margin-bottom: 24px
+			border-bottom: 1px solid #F2F2F2
+			a
+				font-size: 28px
+				font-style: normal
+				font-weight: 600
+				color: #6E6E73
+				width: 50%
+				text-align: center
+				padding-bottom: 12px
+				&:hover
+					color: $text
+			a.active
+				color: $text
+				border-bottom: 1px solid $orange
+		&__form
+			&__item
+				margin-bottom: 16px
+				span
+					font-size: 12px
+					color: #6E6E73
+					margin-bottom: 5px
+					display: block
+				label
+					display: flex
+					border-radius: 24px
+					background: #f5f7f9
+					padding: 8px 12px
+					justify-content: space-between
+				input
+					font-size: 14px
+					background: none
+					border: none
+			.btn
+				width: 100%
+	.login__showpass
+		cursor: pointer
+	.login__showpass.active
+		path
+			stroke: $text
+	.removepass
+		margin-top: 16px
+		color: $blue
+		text-align: center
+	.error
+		p
+			color: $red
+			margin-top: 5px
+			font-size: 14px
+		input
+			color: $red
+		label
+			border: 1px solid $red
+.popup-login
+	p
+		text-align: center
+		margin-bottom: 24px
+		span
+			display: block
+			font-weight: 600
+	.popup-decline__wrapper
+		gap: 16px
+	.btn
+		width: 50%
+	&__code
+		span
+			color: #6E6E73
+			font-size: 14px
+			text-align: center
+			display: block
+			margin-bottom: 12px
+		input
+			width: 36px
+			height: 40px
+			background: #F5F7F9
+			border: none
+			font-size: 14px
+			margin-right: 12px
+			padding: 8px 12px
+			border-radius: 12px
+			text-align: center
+		form
+			justify-content: center
+			display: flex
+		&__remove
+			text-align: center
+			margin-top: 16px
+			a
+				display: inline-block
+				color: $blue
+.fancybox__content>.f-button.is-close-btn
+	top: 10px
+	right: 10px
+	color: #000
+.recommend__form__grid__bottom__left
+	width: 50%
+.recommend__form__grid__bottom__right
+	width: 50%
+.moder-boost
+	border-radius: 24px
+	background: #6E6E73
+	padding: 4px 16px
+	align-items: center
+	gap: 4px
+	color: #fff
+	margin-left: 36px
+.item-bottom__moder
+	border-top: 1px solid #F2F2F2
+	padding-top: 12px
+	.item__bottom__btns
+		border-bottom: none
+.back-moder
+	margin-bottom: 24px
+	align-items: center
+	.download
+		border-radius: 20px
+		background: #F2F2F2
+		padding: 12px 24px 11px 24px
+		height: 40px
+		display: flex
+		align-items: center
+		justify-content: center
+.moder-plate
+	margin: 24px 0
+	padding: 32px 0px
+	border-radius: 18px
+	background: #F5F7F9
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	.need-boost
+		margin-bottom: 24px
+	&__top
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		margin-bottom: 3px
+		align-items: center
+		svg
+			margin-right: 8px
+		span
+			color: $orange
+	.btn
+		width: 100%
+		text-align: center
+		max-width: 300px
+		margin-bottom: 16px
+.moder-row-top
+	img
+		width: 48px
+		height: 48px
+		margin-right: 16px
+	.item__top__name
+		font-size: 16px
+		font-style: normal
+		font-weight: 700
+		color: $text
+	&__status
+		margin-top: 7px
+		margin-left: 24px
+		display: flex
+		align-items: center
+		gap: 8px
+		height: fit-content
+		.circle
+			width: 8px
+			height: 8px
+			border-radius: 20px
+	&__status.green
+		color: #2EA319
+		.circle
+			background: #2EA319
+.check-text
+	height: 24px
+	width: 24px
+	background: #ECF1F7
+	border-radius: 8px
+	padding: 4px
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-right: 8px
+.check-text-block
+	margin-bottom: 12px
+.moder-lk
+	.item__center
+		border-top: 1px solid #F2F2F2
+		padding-top: 12px
+.moder-descr
+	margin-bottom: 12px
+	a
+		display: flex
+		align-items: center
+		color: #336FEE
+		gap: 5px
+.person-boost-item
+	&__boost
+		margin-left: auto
+		display: flex
+		padding: 4px 16px
+		justify-content: center
+		align-items: center
+		gap: 4px
+		border-radius: 24px
+		border: 1px solid #FFDD2D
+		background: #F2F2F2
+	&__left
+		gap: 3px
+		align-items: center
+.moder-statistic
+	margin-bottom: 24px
+	padding-bottom: 10px
+	padding-top: 24px
+	border-top: 0.5px solid #E0E0E0
+	border-bottom: 0.5px solid #E0E0E0
+	padding-bottom: 20px
+	&__show
+		margin-bottom: 12px
+		font-weight: 700
+		cursor: pointer
+		svg
+			margin-left: 10px
+			margin-top: -2px
+	&__show.active
+		svg
+			transform: rotate(180deg)
+	&__hide
+		display: none
+	&__hide.active
+		display: block
+	&__col
+		width: 50%
+	&__row
+		gap: 24px
+		display: flex
+	&__col1
+		.moder-statistic__title
+			color: #6E6E73
+	&__col2
+		.moder-statistic__title
+			color: $red
+	&__title
+		margin-bottom: 24px
+		padding-bottom: 20px
+		border-bottom: 0.5px solid #E0E0E0
+	&__chips
+		display: flex
+		gap: 12px
+		flex-wrap: wrap
+	&__item
+		display: flex
+		padding: 10px
+		align-items: flex-start
+		gap: 10px
+		border-radius: 36px
+		background: #F2F2F2
+		gap: 8px
+		font-weight: 600
+		.number
+			font-size: 14px
+			color: #2b2b2b
+			background: #fff
+			border-radius: 20px
+			padding: 2px 8px
+		.number.red
+			background: rgba(247, 92, 92, 0.50)
+			color: #fff
+		.number.yellow
+			background: rgba(255, 221, 45, 0.50)
+#name
+	position: relative
+.name-same
+	position: absolute
+	width: 100%
+	display: none
+	li
+		display: flex
+		align-items: center
+		font-size: 14px
+		border: 1px solid rgba(110, 110, 115, 0.20)
+		background: #F5F7F9
+		padding: 8px 12px
+		margin-top: -1px
+		cursor: pointer
+		&:hover
+			background: #F2F2F2
+		&:first-child
+			border-radius: 24px 24px 0px 0px
+		&:last-child
+			border-radius: 0 0 24px 24px
+		span
+			color: #6E6E73
+			margin-bottom: 0
+.selectize-input
+	background: none
+	font-size: 14px
+	.item
+		padding: 0
+		margin: 0
+	input
+		display: none!important
+.selectize-control.single .selectize-input
+	background: #fff
+	background-color: #fff
+	box-shadow: none
+	border: none
+	border-radius: 24px
+	padding: 10px
+.selectize-dropdown
+	overflow: hidden
+	border-radius: 0 0 24px 24px
+	.option
+		padding: 8px 12px
+		border-bottom: 1px solid #F2F2F2
+.selectize-dropdown .selected
+	background: $orange
+	color: $text
+.selectize-dropdown .active:not(.selected)
+	background: none
+.selectize-control.single .selectize-input, .selectize-dropdown.single
+	border-color: transparent
+.dropdown-active
+	border-radius: 24px 24px 0 0!important
+.selectize-control.single .selectize-input:after
+	background: url('../files/arrsel.svg') no-repeat center
+	width: 24px
+	height: 24px
+	border-color: transparent!important
+	margin: 0
+	transform: translateY(-50%)
+	top: 50%
+	border-width: 0
+	@include trans
+	right: 10px
+.selectize-control.single .selectize-input.dropdown-active:after
+	margin-top: 0
+	border-width: 0
+	transform: translateY(-50%) rotate(180deg)
+	@include trans
+.single
+	margin-bottom: 0
+.faq
+	&-new
+		margin-left: auto
+		align-items: center
+		gap: 10px
+		font-size: 20px
+		font-style: normal
+		font-weight: 600
+		&:hover
+			color: $orange
+			svg
+				path
+					stroke: $orange
+	&__wrapper
+		padding: 32px 32px 32px 36px
+		border-radius: 24px
+		background: #fff
+	&__item
+		border-bottom: 1px solid #D2D2D7
+		padding-bottom: 12px
+		&:not(:last-child)
+			margin-bottom: 24px
+		&__title
+			font-size: 24px
+			margin-bottom: 12px
+		&__btns
+			margin-left: auto
+			margin-top: 20px
+			justify-content: flex-end
+			gap: 16px
+			.btn
+				white-space: nowrap
+				width: 200px
+		&__btn
+			margin-left: auto
+			height: fit-content
+			&:hover
+				svg
+					path
+						stroke: $orange
+.left-menu__buttons
+	gap: 16px
+	.btn
+		width: 50%
+		white-space: nowrap
+		justify-content: center
+.btn-red
+	background: none
+	color: $red
+	border: 1px solid $red
+	&:hover
+		background: $red
+		color: #fff
+.popup-faq
+	.popup-decline__title
+		text-align: center
+	.back
+		height: fit-content
+	.popup-decline__top
+		align-items: flex-start
+.btn-grey
+	background: #F5F7F9
+	color: $text
+	&:hover
+		color: $text
+		background: #e7e9ea
+.faq__item.edit
+	input
+		width: 100%
+	.faq__item__left
+		width: 100%
+		margin-right: 10px
+	.faq__item__btn
+		display: none
+.left-menu__row
+	gap: 8px
+	label
+		width: 50%
+.faq__item__btns2
+	margin-top: 20px
+	margin-left: 0
+	gap: 8px
+	.btn
+		border-radius: 50px
+		font-size: 12px
+		padding: 6px 8px
+.recommend__form__bottom-smm
+	gap: 15px
+	padding-top: 24px
+	border-top: 1px solid #F2F2F2
+	margin-top: 12px
+	.btn
+		width: 50%
+		text-align: center
+.recommend__textarea
+	textarea
+		height: 160px
+.recommend__form__grid-smm
+	border: none
+.smm-form__upload
+	margin: 0 auto 24px
+	display: flex
+	flex-direction: column
+	align-items: center
+	cursor: pointer
+	width: fit-content
+	&__img
+		display: flex
+		align-items: center
+		height: 124px
+		width: 124px
+		border-radius: 18px
+		background: #F5F7F9
+		justify-content: center
+		margin-bottom: 8px
+	input
+		position: absolute
+		left: 100%
+		opacity: 0
+		width: 0
+		height: 0
+		z-index: -22
+	&:hover
+		.smm-form__upload__img
+			svg
+				transform: translateY(-10px)
+.item__top__boost
+	display: flex
+	align-items: center
+	gap: 8px
+	font-size: 15px
+	border-radius: 24px
+	border: 1px solid #FFDD2D
+	background: #F2F2F2
+	padding: 6px 16px
+	&:hover
+		color: $text
+		svg
+			transform: translateY(-2px)
+.item__top__boost-error
+	color: $red
+	border: 1px solid $red
+.item__moder__person__bottom-sourcer
+	justify-content: space-between
+	.item__date
+		margin-left: 0
+.moder-row-top
+	.item__top__boost
+		height: fit-content
+		margin-left: 36px
+.mycompany
+	background: none
+	.recommend
+		max-width: 100%
+	&__cards
+		display: grid
+		grid-template-columns: repeat(5, 1fr)
+		grid-gap: 20px
+		margin-bottom: 36px
+		&__item
+			border-radius: 18px
+			background: #EAECEE
+			padding: 30px 10px
+			text-align: center
+		&__num
+			font-size: 36px
+			font-style: normal
+			font-weight: 700
+			margin-bottom: 12px
+		p
+			font-size: 20px
+		.red
+			.mycompany__cards__num
+				color: #F75C5C
+		.green
+			.mycompany__cards__num
+				color: #2EA319
+	.item__row
+		p
+			margin-bottom: 0
+		a
+			color: $text
+			text-decoration: underline
+			display: inline-block
+		.tag
+			text-decoration: none
+	.item__top
+		border: none
+		padding-bottom: 0
+		margin-bottom: 12px
+	.item__center
+		margin-top: 0
+		border-bottom: 1px solid #F2F2F2
+		padding-bottom: 12px
+	.item__top__left
+		width: 70%
+	.recommend-input
+		input
+			font-size: 14px
+	.recommend__form__grid
+		margin-top: 16px
+		border: none
+		padding: 0
+	.recommend-input .selectize-control.single .selectize-input
+		font-size: 14px
+	textarea
+		height: 150px
+		padding: 12px
+	.item__center
+		.recommend-input
+			margin-top: 10px
+
+.mycompany-info
+	font-size: 20px
+	color: #6E6E73
+.mycompany-edit
+	background: none
+.item__managers
+	&__top
+		display: flex
+		align-items: center
+		margin-top: 24px
+		justify-content: space-between
+		margin-bottom: 16px
+		.btn
+			display: flex
+			align-items: center
+			gap: 10px
+		p
+			font-weight: 700
+	&__btns
+		justify-content: center
+		border-top: 1px solid #F2F2F2
+		padding-top: 24px
+		margin-top: 12px
+		gap: 16px
+		.btn
+			width: 25%
+.item__managers__table
+	padding: 24px 24px 24px 16px
+	border-radius: 24px
+	background: #F5F7F9
+
+	table
+		width: 100%
+
+		border-collapse: collapse
+	.header-tr
+		border-bottom: 1px solid #E0E0E0
+		td
+			padding: 10px 10px 20px 10px
+			color: #6E6E73
+	td
+		padding: 10px
+		padding-top: 24px
+		.header-tr
+			td
+				padding-top: 12px
+	.trigger
+		cursor: pointer
+		&:hover
+			svg
+				path
+					stroke: $orange
+.logo-edit
+	&__btn
+		margin-top: 10px
+		text-align: center
+.item__bottom__candidat
+	.item__bottom__btns__row
+		width: 100%
+		align-items: center
+	.item__bottom__btns__right
+		gap: 24px
+.item__top__boost
+	margin-left: 10px
+.candidat-subscribe
+	border-radius: 18px
+	background: var(--White, #FFF)
+	width: 100%
+	max-width: 100%
+	padding: 32px
+	.subscribe__title
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		line-height: 110%
+		margin-bottom: 12px
+	p
+		font-size: 16px
+	.btn
+		width: fit-content
+		margin-top: 12px
+		align-items: center
+		gap: 10px
+.item__bottom__candidat2
+	border-bottom: 1px solid #F2F2F2
+	padding-bottom: 20px
+	.item__bottom__btns__right
+		margin-left: auto
+.candidat__rec
+	text-align: center
+	margin-top: 16px
+.candidat__message
+	margin-top: 12px
+	padding-bottom: 24px
+	border-bottom: 1px solid #F2F2F2
+	border-top: 1px solid #F2F2F2
+	padding-top: 24px
+	&__title
+		font-size: 20px
+		font-style: normal
+		font-weight: 400
+		color: #6E6E73
+		margin-bottom: 16px
+.candidat-deadline
+	margin-top: 25px
+	border-bottom: 1px solid #F2F2F2
+	padding-bottom: 16px
+	justify-content: flex-end
+	gap: 20px
+	position: relative
+	.call-btn
+		position: relative
+	.ask-popup-trigger
+		margin-top: -10px
+		position: static
+	.ask-popup
+		max-width: 200px
+		width: fit-content
+		transform: none
+		right: 0
+		left: auto
+		border-radius: 12px
+		padding: 8px
+		p
+			font-size: 12px
+.resume
+	margin-bottom: 26px
+	&__wrapper
+		height: 336px
+		overflow-y: auto
+		border-radius: 18px
+		border: 1px solid #F2F2F2
+		&::-webkit-scrollbar-thumb
+			background: rgba(0,0,0,.3)
+			border-radius: 50px
+		&::-webkit-scrollbar-track
+			background: none
+		img
+			width: 100%
+.personal__item
+	background: #fff
+	padding: 32px 36px
+	border-radius: 24px
+	border: none
+	margin-bottom: 25px
+	.faq__item__title
+		margin-bottom: 7px
+	.faq__item__occup
+		font-size: 16px
+		font-style: normal
+		font-weight: 700
+		margin-bottom: 12px
+.personal2
+	.item__top__left
+		width: 100%
+	.item__top
+		border: none
+		margin-bottom: 0px
+		padding: 0
+	.recommend__form__grid
+		margin: 0
+	.item__managers
+		margin-bottom: 24px
+		border-bottom: 1px solid #F2F2F2
+		padding-bottom: 12px
+		margin-top: 16px
+		td
+			padding-top: 24px
+		.header-tr
+			td
+				padding-top: 12px
+	.item__managers__btns
+		border: none
+		padding: 0
+		.btn
+			width: 50%
+	.item__managers__radio
+		margin-bottom: 24px
+.radio-slice
+	background: rgba(0,0,0,.1 )
+	width: 48px
+	height: 24px
+	border-radius: 50px
+	cursor: pointer
+	position: relative
+	*
+		@include trans
+	&::after
+		content: ''
+		position: absolute
+		left: 3px
+		top: 50%
+		transform: translateY(-50%)
+		width: 20px
+		height: 20px
+		border-radius: 50px
+		@include trans
+		background: #fff
+.radio-slice.active
+	background: $orange
+	&::after
+		left: 25px
+.personal3
+	.mycompany__cards
+		display: flex
+	.mycompany__cards__item
+		width: 100%
+	.recommend
+		max-width: 100%
+	.item__managers__radio
+		justify-content: flex-start
+		align-items: center
+		margin-bottom: 0
+		gap: 24px
+		p
+			margin: 0
+	.item
+		.item__managers__top
+			margin-top: 0
+.personal6
+	.columns__right
+		margin-top: 70px
+.personal-similar
+	.item__row__title
+		font-size: 16px!important
+	.item__title
+		font-size: 20px
+		margin: 0
+	.item__top
+		align-items: center
+.title-one
+	margin-bottom: 36px
+.item__info__name
+	margin-bottom: 8px
+.personal9
+	.columns__right
+		max-width: 970px
+.similar
+	.item__managers__table
+		background: none
+		padding: 0
+.table__comment
+	width: 40%
+.similar
+	margin-top: 36px
+.menu-header
+	background: #F2F2F2
+	margin-bottom: 0
+.header
+	background: #fff
+	padding: 50px 0
+	&__top
+		text-align: center
+		margin-bottom: 64px
+		p
+			font-size: 24px
+			color: #86868B
+			max-width: 840px
+			margin: 0 auto
+	h1
+		font-size: 64px
+		font-style: normal
+		font-weight: 700
+		margin-bottom: 24px
+		line-height: 100%
+		span
+			color: #FCC722
+	.swiper-container-header
+		max-width: 1064px
+		overflow: hidden
+		margin: 0 auto
+		position: relative
+		strong
+			color: $orange
+		.swiper-slide
+			height: 432px
+			gap: 20px
+		&__left
+			width: 432px
+			flex-shrink: 0
+			img
+				width: 100%
+				height: 100%
+				border-radius: 18px
+	.item
+		padding: 0
+		margin: 0
+		height: 100%
+		display: flex
+		flex-direction: column
+	.item__bottom
+		margin-top: auto
+		margin-left: auto
+	.swiper-container-header__nav
+		position: absolute
+		bottom: 0
+		left: 457px
+		z-index: 2
+		gap: 56px
+		align-items: center
+	.swiper-container-header__page
+		gap: 16px
+
+		.swiper-button-disabled
+			background: none
+	.swiper-pagination-bullet
+		width: 12px
+		height: 12px
+		background: #FFF5C0
+		opacity: 1
+	.swiper-pagination-bullet-active
+		background: $orange
+.header-section
+	h2
+		text-align: center
+		font-size: 48px
+		font-style: normal
+		font-weight: 600
+		margin-bottom: 36px
+.nav-btn
+	width: 36px
+	height: 36px
+	background: $orange2
+	border-radius: 100px
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	&:hover
+		transform: translateY(-5px)
+		background: #FCC722
+.swiper-button-disabled
+	background: none
+	pointer-events: none
+
+.forwho
+	&__item
+		border-radius: 18px
+		background: #B7C0CD
+		padding: 32px 24px
+		height: auto
+		&__left, &__right
+			gap: 20px
+			width: 50%
+			img
+				width: 100%
+		&:last-child
+			background: #EAECEE
+		&__title
+			font-size: 28px
+			font-style: normal
+			font-weight: 600
+			margin-bottom: 36px
+		li
+			font-size: 20px
+			margin-bottom: 12px
+			display: list-item
+		ul
+			padding-left: 25px
+.paidfor
+	.container
+		overflow: visible
+	&__top
+		align-items: center
+		margin-bottom: 36px
+		justify-content: space-between
+		position: relative
+	.swiper-container-selectors
+		margin-bottom: 0
+		overflow: hidden
+		align-items: center
+		position: relative
+		width: 100%
+
+		.swiper-slide
+			padding: 8px 16px
+			border-radius: 20px
+			border: 1px solid #6E6E73
+			width: fit-content
+			&:hover
+				background: $orange
+				border: 1px solid $orange
+				color: $text
+	.paidfor-top-prev
+		position: absolute
+		left: -25px
+		margin-right: 10px
+		cursor: pointer
+	.paidfor-top-next
+		position: absolute
+		right: -25px
+		cursor: pointer
+		margin-left: 20px
+	&__cards
+		position: relative
+		.nav-btn
+			position: absolute
+			z-index: 3
+			top: 50%
+			transform: translateY(-50%)
+		.page__left
+			left: -50px
+		.page__right
+			right: -50px
+		&__top
+			align-items: center
+			justify-content: space-between
+			padding-bottom: 8px
+			border-bottom: 1px solid #C8C8C9
+			margin-bottom: 24px
+		&__status
+			font-size: 16px
+			font-style: normal
+			font-weight: 700
+			color: #6E6E73
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: -15px
+				top: 7px
+				background: #FCC722
+				width: 8px
+				height: 8px
+				border-radius: 40px
+		&__title
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+			margin-bottom: 8px
+		&__prices
+			color: #06C
+			margin-bottom: 24px
+		&__bonus
+			border-radius: 20px
+			background: #FFF
+			padding: 8px 16px
+			width: fit-content
+			margin: 0 auto
+		&__logo
+			width: 80px
+			height: 24px
+			object-fit: contain
+	.swiper-container-cards
+		overflow: hidden
+		.swiper-slide
+			border-radius: 18px
+			background: #F2F2F2
+			padding: 32px 24px
+			text-align: center
+			&:hover
+				background: #2B2B2B
+				.paidfor__cards__title
+					color: #fff
+				.paidfor__cards__bonus
+					color: $text
+	&__more
+		font-size: 24px
+		padding: 16px 32px
+		border-radius: 8px
+		background: #F5F5F7
+		width: fit-content
+		margin: 0 auto
+		margin-top: 36px
+.header-white
+	background: #fff
+.header-section
+	padding: 50px 0
+	margin-bottom: 0
+.howwork
+	&__item
+		display: flex
+		max-width: 324px
+		border-radius: 18px
+		padding: 16px
+		height: 160px
+		gap: 4px
+		p
+			font-weight: 600
+			margin-bottom: 12px
+			white-space: nowrap
+	&__left
+		width: 70%
+	&__right
+		display: flex
+		align-items: center
+		justify-content: center
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		gap: 50px 150px
+	&__item1
+		background: #F1EBD6
+		margin-right: auto
+	&__item2
+		background: #E6F0E2
+	&__item3
+		background: #E2E8F0
+		margin-left: auto
+	&__item4
+		background: #e2e8f0
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: -150px
+			left: 50%
+			transform: translateX(-50%)
+			background: url('../img/arr.png') no-repeat center
+			width: 156px
+			height: 156px
+		&::before
+			content: ''
+			position: absolute
+			top: -50px
+			left: -150px
+			background: url('../img/arr2.png') no-repeat center
+			width: 156px
+			height: 156px
+	&__item5
+		background: #EAECEE
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: -150px
+			left: 50%
+			transform: translateX(-50%)
+			background: url('../img/arr.png') no-repeat center
+			width: 156px
+			height: 156px
+		&::before
+			content: ''
+			position: absolute
+			top: -50px
+			left: -150px
+			background: url('../img/arr2.png') no-repeat center
+			width: 156px
+			height: 156px
+.recomendations
+	&__wrapper
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-gap: 20px
+		max-width: 890px
+		margin: 0 auto
+	&__item
+		padding: 32px 24px
+		border-radius: 18px
+		text-align: center
+		background: #F2F2F2
+		img
+			margin-bottom: 24px
+			height: 288px
+			border-radius: 18px
+			width: 100%
+			object-fit: cover
+		p
+			font-size: 24px
+			font-style: normal
+			font-weight: 700
+			margin-bottom: 12px
+		span
+			font-size: 20px
+.formats
+	&__left
+		width: 407px
+		flex-shrink: 0
+	&__row
+		gap: 36px
+	&__row1
+		margin-bottom: 56px
+		.formats__right
+			border-radius: 18px
+			background: #EAECEE
+			padding: 36px
+			img
+				width: 100%
+		.formats__left
+			background: #fff
+			padding: 32px 24px
+			border-radius: 18px
+			height: 100%
+			p
+				font-size: 28px
+				font-style: normal
+				font-weight: 700
+				margin-bottom: 16px
+			li
+				display: list-item
+				color: #6E6E73
+				margin-bottom: 4px
+			ul
+				padding-left: 20px
+				margin-bottom: 16px
+	.btn-header
+		font-size: 24px
+		font-style: normal
+		font-weight: 400
+		color: $text
+		text-align: center
+	&__row2
+		flex-direction: row-reverse
+		.formats__right
+			img
+				width: 100%
+		.formats__left
+			width: 370px
+			display: flex
+			flex-direction: column
+			gap: 16px
+			svg, p
+				text-align: center
+				margin: 0 auto
+			p
+				font-size: 28px
+				font-style: normal
+				font-weight: 700
+			li
+				display: list-item
+				margin-bottom: 4px
+			ul
+				padding-left: 20px
+	.btn-white
+		background: #fff
+		color: $blue
+		font-size: 24px
+		padding: 16px 32px
+		text-align: center
+		width: fit-content
+		margin: 0 auto
+		&:hover
+			color: #fff
+			background: $blue
+.header-faq
+	&__item
+		position: relative
+		border-bottom: 1px solid #D2D2D7
+		svg
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(-50%) rotate(-90deg)
+			opacity: .5
+	&__show
+		padding: 24px 0
+		font-size: 32px
+		font-style: normal
+		font-weight: 400
+		cursor: pointer
+		max-width: calc(100% - 18px)
+	&__hide
+		font-size: 20px
+		opacity: 0
+		height: 0
+		overflow: hidden
+
+		transform: translateY(-20px)
+		z-index: -2
+		position: relative
+	svg
+		cursor: pointer
+	&__item.active
+		svg
+			transform: translate(-50%) rotate(0deg)
+			opacity: 1
+		.header-faq__hide
+			display: block
+			opacity: 1
+			height: 100%
+			transform: translateY(0px)
+			z-index: 1
+			padding-bottom: 24px
+	&__plate
+		border-radius: 18px
+		background: #F5EEE4
+		padding: 32px
+		font-size: 24px
+		text-align: center
+		margin-top: 24px
+		a
+			color: $blue
+			display: inline-block
+			&:hover
+				text-decoration: underline
+.forms
+	&__right
+		max-width: 540px
+		height: 91%
+		img
+			border-radius: 18px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		font-size: 36px
+		font-style: normal
+		font-weight: 600
+		text-align: center
+		margin-bottom: 36px
+	.login__plate__form__item
+		margin-bottom: 16px
+		input
+			width: 100%
+			border-radius: 24px
+			background: #f5f7f9
+			padding: 12px 16px
+			font-size: 20px
+	&__left
+		max-width: 630px
+		p
+			font-size: 24px
+			margin-bottom: 25px
+			a
+				display: inline-block
+				color: $blue
+	&__descr
+		font-size: 14px
+		margin-bottom: 24px
+		a
+			display: inline-block
+			color: $blue
+	.btn
+		font-size: 15px
+		text-align: center
+		margin: 0 auto
+	form
+		background: #fff
+		padding: 36px 24px
+		border-radius: 18px
+		display: flex
+		flex-direction: column
+		p
+			font-size: 14px
+			text-align: center
+			margin-top: 12px
+			margin-bottom: 0
+			a
+				color: $blue
+				display: inline-block
+.header-footer
+	&__title
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		margin-bottom: 24px
+	&__block
+		display: flex
+		flex-direction: column
+		gap: 20px
+	&__col
+		max-width: 200px
+		&:nth-child(2), &:nth-child(3)
+			margin-top: 85px
+	strong
+		font-weight: 600
+	li
+		font-size: 20px
+		margin-bottom: 12px
+	a
+		&:hover
+			color: $orange
+	.strong
+		li
+			font-weight: 700
+.menu-header2
+	background: #fff
+	margin-bottom: 0
+.inner-faq
+	background: #F2F2F2
+	.header-faq__wrapper
+		background: #fff
+		padding: 32px 32px 32px 36px
+		border-radius: 24px
+	.inner-faq__top
+		margin-bottom: 16px
+	.swiper-slide
+		width: fit-content
+		padding: 8px 24px
+		font-size: 20px
+		text-align: center
+	.search
+		max-width: 870px
+		margin: 0 auto
+		margin-bottom: 16px
+	.inner-faq__selectors
+		border-radius: 100px
+		padding: 4px
+		background: #fff
+		overflow: hidden
+	.inner-faq__sel
+		cursor: pointer
+	.inner-faq__sel.active
+		background: $orange
+		border-radius: 100px
+		&:hover
+			color: $text
+	.inner-faq__inner-selects
+		display: flex
+		gap: 16px
+		justify-content: center
+		margin-top: 16px
+		display: none
+		&__item
+			padding: 8px 16px
+			border-radius: 20px
+			border: 1px solid #6E6E73
+	.inner-faq__inner-selects__item.active
+		background: $text
+		color: #fff
+		border: 1px solid $text
+	.inner-faq__inner-selects.active
+		display: flex
+	.inner-faq__descr
+		margin: 0px 0 36px
+		font-size: 24px
+		color: #6E6E73
+		text-align: center
+.blog
+	border-radius: 24px
+	background: #fff
+	padding: 32px
+	margin-top: 36px
+.blog__wrapper
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 20px
+	&__item
+		border-radius: 18px
+		background: #F5F7F9
+		padding: 24px 24px 32px 24px
+		p
+			font-size: 24px
+			font-style: normal
+			font-weight: 700
+			margin-bottom: 8px
+		span
+			font-size: 20px
+			margin-bottom: 8px
+		img
+			height: 240px
+			border-radius: 18px
+			width: 100%
+			object-fit: cover
+			margin-bottom: 32px
+		&:hover
+			color: $text
+	&__date
+		font-size: 12px
+		margin-top: 8px
+	&__link
+		font-size: 20px
+		font-style: normal
+		font-weight: 600
+		color: $blue
+		&:hover
+			text-decoration: underline
+.blog__pag
+	justify-content: center
+	margin-top: 20px
+	align-items: center
+	gap: 16px
+	color: #6E6E73
+	a.active
+		background: #FFF5C0
+		width: 24px
+		height: 24px
+		border-radius: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+	.nav-btn
+		background: none
+	.active-page
+		background: $orange2
+.article
+	&__tags
+		justify-content: center
+		font-size: 20px
+		gap: 8px
+		margin-bottom: 24px
+		&__item1
+			padding: 8px 12px
+			border-radius: 51px
+			background: #EAECEE
+		&__item2
+			padding: 8px 12px
+			border-radius: 51px
+			background: $orange
+			align-items: center
+			gap: 5px
+	&__cover
+		height: 432px
+		object-fit: cover
+		border-radius: 18px
+		width: 100%
+		margin-bottom: 24px
+	article
+		h2
+			text-align: left
+			margin-bottom: 16px
+			font-size: 32px
+			font-style: normal
+			font-weight: 400
+		p
+			margin-bottom: 16px
+	&__wrapper
+		padding: 32px 32px 32px 36px
+		background: #fff
+		border-radius: 24px
+	&__date
+		font-size: 12px
+		text-align: right
+	&__nav
+		margin-top: 36px
+		font-size: 24px
+	.article__prev, .article__next
+		color: #6E6E73
+		align-items: center
+		gap: 16px
+	.article__next
+		color: $text
+	.page__left
+		background: none
+.com-header
+	padding: 36px 0 56px
+	background: #fff
+	margin-bottom: 0
+	h1
+		font-size: 48px
+		font-style: normal
+		font-weight: 600
+		line-height: 100%
+		margin-bottom: 24px
+	p
+		font-size: 24px
+		margin-bottom: 24px
+	.btn
+		color: $text
+		font-size: 24px
+		width: fit-content
+	&__right
+		width: 40%
+		img
+			width: 100%
+			height: 100%
+			max-height: 430px
+	&__left
+		width: 60%
+	.container
+		gap: 36px
+.com-cards
+	margin-bottom: 0
+	padding-bottom: 56px
+	background: #fff
+	.com-card__slider
+		gap: 20px
+	&__item
+		padding: 32px 24px
+		border-radius: 18px
+		text-align: center
+		width: calc(100% / 3)
+		p
+			margin: 12px 0
+			font-size: 24px
+			font-style: normal
+			font-weight: 700
+		span
+			font-size: 20px
+		&:nth-child(1)
+			background: #B7C0CD
+		&:nth-child(2)
+			background: #E6F0E2
+		&:nth-child(3)
+			background: #F1EBD6
+.com-ref
+	background: #F5F7F9
+	padding: 32px 0
+	margin-bottom: 0
+	.container
+		gap: 56px
+	&__left
+		width: 50%
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-gap: 20px
+		height: 100%
+	&__right
+		width: 50%
+		h3
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+			margin-bottom: 16px
+		p
+			strong
+				margin-top: 16px
+				display: block
+	&__block
+		display: none
+	.com-ref__block.active
+		display: block
+	&__item
+		padding: 16px
+		border-radius: 18px
+		height: auto
+		img
+			border-radius: 18px
+			margin-bottom: 24px
+		p
+			text-align: center
+			font-size: 20px
+			font-style: normal
+			font-weight: 700
+		&:nth-child(1)
+			background: #F1EBD6
+		&:nth-child(2)
+			background: #E2E8F0
+		&:nth-child(3)
+			background: #EAECEE
+		&:nth-child(4)
+			background: #E6F0E2
+		&:hover
+			color: $orange
+	&__item.active
+		color: $orange
+		background: #2B2B2B
+	.com-ref__block-mob
+		display: none
+.com-plan
+	background: #fff
+	padding: 56px 0
+	margin-bottom: 0
+	h2
+		font-size: 36px
+		font-style: normal
+		font-weight: 600
+		text-align: center
+		margin-bottom: 56px
+	&__row
+		gap: 24px
+	&__item
+		width: calc(100% / 4)
+		padding: 24px
+		background: #F5F7F9
+		border-radius: 18px
+		height: auto
+		display: flex
+		flex-direction: column
+	&__plate
+		font-weight: 600
+		padding: 8px 16px
+		border-radius: 16px
+		background: #FFDD2D
+		text-align: center
+		margin-bottom: 12px
+	&__price
+		color: #6E6E73
+		display: flex
+		margin-bottom: 8px
+		span
+			font-size: 24px
+			font-style: normal
+			font-weight: 700
+			color: #2B2B2B
+			white-space: nowrap
+			margin-right: 5px
+			margin-top: -3px
+	&__descr
+		color: #6E6E73
+		font-size: 12px
+		padding-bottom: 12px
+		border-bottom: 1px solid rgba(110, 110, 115, 0.30)
+		margin-bottom: 16px
+	&__list
+		margin-bottom: 20px
+		li
+			margin-bottom: 8px
+			position: relative
+			padding-left: 30px
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				width: 24px
+				height: 24px
+				background: url('../files/check.svg') no-repeat center
+	.btn
+		margin-top: auto
+		text-align: center
+.com-reg
+	padding: 56px 0
+	background: #fff
+	color: #fff
+	.container
+		border-radius: 18px
+		background: #2B2B2B
+		padding: 36px
+	&__left
+		width: 57%
+	&__right
+		width: 40%
+	h2
+		font-size: 36px
+		font-style: normal
+		color: #FFF
+		font-weight: 600
+		margin-bottom: 24px
+	p
+		font-size: 20px
+	form
+		gap: 16px
+		display: flex
+		flex-direction: column
+		input
+			font-size: 20px
+			border-radius: 8px
+		.row
+			gap: 16px
+			input
+				width: 50%
+	&__descr
+		font-size: 14px
+		a
+			display: inline-block
+			color: #47A3FF
+.com-calc
+	&__left
+		width: 45%
+		text-align: center
+		p
+			font-size: 20px
+			margin-bottom: 16px
+	&__right
+		width: 55%
+		height: auto
+		img
+			width: 100%
+			height: 100%
+			border-radius: 18px
+			object-fit: cover
+	.container
+		gap: 56px
+	h2
+		font-size: 36px
+		font-style: normal
+		font-weight: 600
+		margin-bottom: 24px
+	&__form
+		background: #fff
+		padding: 32px 32px 32px 36px
+		text-align: left
+		border-radius: 24px
+		display: flex
+		flex-direction: column
+	.selectize-input .item, .selectize-control.single .selectize-input
+		background: #F5F7F9
+	.sel > span
+		font-size: 14px
+		margin-bottom: 4px
+		display: block
+		color: #6E6E73
+	.sel
+		margin-bottom: 16px
+
+	.btn-count
+		text-align: center
+		width: 100%
+		max-width: 230px
+		margin: 0 auto
+	&__result
+		margin-top: 24px
+		border-radius: 18px
+		background: #F5F7F9
+		padding: 16px
+		text-align: center
+	&__res
+		margin-bottom: 5px
+		font-size: 16px
+	&__price
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		margin-bottom: 24px
+	.btn-action
+		font-weight: 600
+	.com-calc__change
+		display: none
+	.com-calc__change.active
+		display: block
+	.com-calc__result
+		display: none
+.popup-registr
+	form
+		.row
+			gap: 16px
+	.recommend-input
+		margin-bottom: 16px
+	.check-arr
+		padding-left: 35px
+		margin-bottom: 24px
+		span
+			font-size: 14px
+		a
+			color: $blue
+			display: inline-block
+		&::after
+			width: 24px
+			height: 24px
+			border-radius: 4px
+			background: #F5F7F9
+	.btn
+		max-width: 300px
+		margin: 0 auto 12px
+	p
+		text-align: center
+		font-size: 14px
+		a
+			display: inline
+			color: $blue
+	.check-arr.active
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 3px
+			width: 20px
+			height: 20px
+			background: url('../files/arr2.svg') no-repeat center
+			z-index: 2
+.item__center-border
+	border-top: 1px solid #F2F2F2
+	padding-top: 12px
+	.item__row
+		&:first-child
+			margin: 0
+.mb0
+	margin-bottom: 0!important
+.mt0
+	margin-top: 0!important
+.item__top__prof
+	width: fit-content
+.boost-time
+	text-align: center
+	font-size: 16px
+	font-style: normal
+	font-weight: 700
+	margin-bottom: 24px
+.selectize-dropdown
+	transition: none!important
+.recommend-input
+	.white-bg
+		background: #fff!important
+.white-bg
+	background: #fff!important
+.mob-back__comp
+	.mycomp-menu__edit
+		display: none
+.klient
+	.container
+		overflow: visible
+	.columns__menu__right
+		span
+			background: #EAECEE!important
+			color: $text!important
+		li
+			a
+				display: flex
+				gap: 5px
+	.item__full__logo
+		margin-top: 0
+	.mycompany__cards__item
+		&:hover
+			background: #fff
+			color: $text
+.klient-item
+	.item__top__download
+		width: 24px
+		margin-bottom: 24px
+	.item__title
+		color: $blue
+	.item__job__link
+		margin-top: 20px
+		width: fit-content
+	.moder-row-top__status, .single
+		width: 140px
+	.selectize-input, .selectize-dropdown-content, .selectize-input .item
+		background: rgb(245, 247, 249)
+		padding: 0
+	.selectize-input .item
+		position: relative
+		padding-left: 15px
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			top: 5px
+			width: 8px
+			height: 8px
+			border-radius: 20px
+			background: #2EA319
+	.selectize-input .item[data-value="stat1"]
+		color: #2EA319
+	.selectize-input .item[data-value="stat2"]
+		color: #F75C5C
+		&::after
+			background: #F75C5C
+	.selectize-input .item[data-value="stat3"]
+		color: #6E6E73
+		&::after
+			background: #6E6E73
+	&__innerinfo
+		align-items: center
+		margin-top: 36px
+
+.klient-managers
+	margin-bottom: 56px
+	z-index: 10
+	position: relative
+	background: #fff
+	padding: 32px
+	border-radius: 24px
+	.item__managers__table
+		background: #fff
+	.item__managers__top
+		margin-top: 0
+		p
+			color: #6E6E73
+			font-size: 20px
+			font-style: normal
+			font-weight: 400
+	tr
+		border-bottom: 1px solid #E0E0E0
+		position: relative
+		td
+			&:first-of-type
+				width: 250px
+			input
+				border-radius: 24px
+				background: #F5F7F9
+				border: none
+				padding: 8px 12px
+				width: 100%
+				font-size: 16px
+	tr.active
+		td
+
+			padding-bottom: 100px
+	.klient-managers-btn1
+		margin-left: auto
+		width: 210px
+		.btn
+			width: 100%
+			padding: 12px
+	&__but
+		position: absolute
+		right: 0
+		width: 520px
+		top: 60px
+		gap: 10px
+		.btn
+			width: 245px
+.td-abs
+	position: absolute
+	right: 0
+	top: 50px
+	z-index: 2
+	border-radius: 24px
+	background: #EAECEE
+	padding: 24px!important
+	width: 240px
+	display: none
+	.klient-managers__inner__row
+		margin-bottom: 16px
+		font-size: 16px
+		gap: 10px
+		align-items: center
+		display: flex
+		width: 100%
+	.radio-slice
+		input
+			width: 10px
+	.klient-managers__inner
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.inner-del
+		color: $red
+		margin-bottom: 0
+.klient-item-status
+	display: block
+	font-size: 14px
+	color: #6E6E73
+	margin-bottom: -0px
+	margin-top: 30px
+	margin-left: 30px
+.klient2
+	tr
+		position: relative
+	.item__top__right
+		margin-top: 30px
+.klient2__bottom
+	padding-top: 24px
+	margin-top: 12px
+	border-top: 1px solid #F2F2F2
+	.recommend-input
+		margin-top: 16px
+		max-width: 400px
+.radio-slice
+	input
+		background: none!important
+.klient2__poprow
+	gap: 20px
+	.selectize-control, .selectize-dropdown
+		width: 100%!important
+	.moder-row-top__status
+		width: 100%!important
+		margin-left: 0
+.klient2__swipe
+	margin-bottom: 20px
+.klient5
+	.moder-statistic__show
+		font-size: 20px
+		font-style: normal
+		font-weight: 400
+		color: #6E6E73
+		align-items: center
+		svg
+			margin-top: 3px
+	.columns__menu__right
+		.red
+			span
+				color: #fff!important
+				background: #F75C5C!important
+		.orange
+			span
+				background: $orange!important
+.moder-row-top__status.red
+	color: $red
+	.circle
+		background: $red
+.moder-row-top__status.grey
+	color: #6E6E73
+	.circle
+		background: #6E6E73
+.klient6
+	.recommend, .klient6-stat
+		margin-bottom: 56px
+		padding: 32px
+		border-radius: 24px
+		background: #fff
+	.klient-item
+		padding: 0
+	.check-text-block
+		margin: 12px 0
+	.bonus-klient
+		margin-left: auto
+		max-width: 100%
+		text-align: right
+	.klient-item__innerinfo__top
+		margin-bottom: 24px
+	.moder-statistic__show
+		font-size: 20px
+		font-style: normal
+		font-weight: 400
+		color: #6E6E73
+		align-items: center
+		svg
+			margin-top: 3px
+.item__row__title
+	margin-bottom: 5px
+.item__row
+	max-width: 900px
+.klient7
+	.item__top__name
+		margin-bottom: 15px
+	.check-arr
+		margin: 0
+	&__col
+		max-width: 400px
+		width: 100%
+		display: flex
+		flex-direction: column
+		gap: 16px
+		&__row
+			.row
+				gap: 20px
+	&__row
+		gap: 36px
+	.item__top
+		border-bottom: 1px solid#F2F2F2
+		padding-bottom: 7px
+	.recommend-input
+		textarea
+			height: auto
+	.klient7__manager
+		max-width: 400px
+	.item__managers__btns
+		border: none
+.check-arr
+	padding-left: 35px
+	margin-bottom: 24px
+	&::after
+		width: 24px!important
+		height: 24px!important
+		border-radius: 4px!important
+		background: #F5F7F9!important
+.check-arr.active
+	&:before
+		content: ''
+		position: absolute
+		top: 60%
+		transform: translateY(-50%)
+		left: 3px
+		width: 20px
+		height: 20px
+		background: url('../files/arr2.svg') no-repeat center
+		z-index: 2
+.air-datepicker
+	z-index: 2222222222
+.footer-bonuses
+	a
+		font-weight: 400
+.optgroup-header
+	font-size: 16px!important
+	padding: 12px!important
+	border-bottom: 1px solid #F2F2F2
+.optgroup
+	.option
+		padding-left: 20px!important
+.back
+	&:focus-visible
+		outline: none!important
+.non-index
+	.item
+		padding-left: 0!important
+		&::after
+			display: none
+.tag-1
+	font-size: 16px
+.item__managers__table
+	tr
+		position: relative
+.curency
+	display: none
+.curency.active
+	display: block
+.klient-item__innerinfo
+	.tag
+		font-size: 16px
+.popup-disabled
+	.popup-decline__title
+		text-align: center
+		span
+			color: $red
+	.popup-decline__wrapper
+		gap: 15px
+	.check::after
+		background: #f5f7f9
+		width: 24px
+		height: 24px
+		border-radius: 8px
+	.check.active::after
+		background: #FFDD2D
+		border: 5px solid #f5f7f9
+	.check
+		margin-bottom: 20px
+		span
+			padding-left: 10px
+	&__text
+		margin-bottom: 30px
+		p
+			font-size: 12px
+	&__bold
+		margin-bottom: 5px
+		font-weight: 700
+		span
+			color: $red
+			margin-left: 10px
+			font-weight: 400
+	&__block > span
+		display: block
+		color: rgba(110, 110, 115, 1)
+		font-size: 14px
+		margin-bottom: 10px
+#stat3
+	.popup-decline__title
+		span
+			color: rgba(110, 110, 115, 1)
+.check-text-block
+	position: relative
+	cursor: pointer
+	input
+		position: absolute
+		left: 100%
+		opacity: 0
+		z-index: -111
+	.check-text
+		svg
+			opacity: 0
+.check-text-block.active
+	.check-text
+		svg
+			opacity: 1
+.klient .columns__menu__right
+	.orange
+		span
+			background: $orange!important
+	span.orange
+		background: $orange!important
+.use-boost
+	margin-left: auto
+	display: flex
+	width: fit-content
+	gap: 10px
+	align-items: center
+	margin-bottom: 20px
+.klient-boost__row
+	gap: 24px
+	margin-top: 60px
+.klient-boost__item
+	text-align: center
+	background: rgba(245, 247, 249, 1)
+	padding: 32px 20px
+	border-radius: 18px
+	h3
+		margin-top: 10px
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 10px
+	p
+		font-size: 16px
+		margin-bottom: 10px
+		span
+			font-weight: 700
+			color: $orange
+	.left-menu__col
+		width: 120px
+		margin: 0 auto
+		text-align: left
+		margin-bottom: 20px
+	.klient-boost__bold
+		font-size: 16px
+		font-weight: 700
+		margin-bottom: 20px
+	.selectize-input .item
+		font-size: 16px
+.item-full__descr
+	text-align: center
+	margin: 0 auto 50px
+	max-width: 600px
+.upload
+	label
+		color: rgba(51, 111, 238, 1)
+		display: flex
+		align-items: center
+		gap: 10px
+		position: relative
+		cursor: pointer
+		font-size: 16px
+	input
+		position: absolute
+		left: 100%
+		opacity: 0
+		z-index: -111
+#doc2, #doc1, #doc3
+	display: none
+#doc2.active, #doc1.active, #doc3.active
+	display: block
+.error-input
+	display: none
+	align-items: center
+	gap: 5px
+	color: $red
+	font-size: 12px
+	margin-top: 5px
+.error
+	input
+		border: 1px solid $red
+	.error-input
+		display: flex
+.link-input
+	input
+		color: $blue
+.item-vacform
+	margin-top: 30px
+	.item__top__left
+		width: 100%
+.item-vacform.item__center
+	margin-top: 0
+	.recommend-input
+		margin-bottom: 15px
+.vacform
+	.item-full
+		padding: 0
+	.item__moder__person
+		margin-top: 20px
+		padding-top: 20px
+		border-top: 1px solid #F2F2F2
+	.item__managers__btns
+		max-width: 100%
+		.btn
+			width: 100%
+.btn-orange
+	&:disabled
+		border: 1px solid rgba(255, 221, 45, 1)
+		opacity: 1
+		background: rgba(255, 242, 174, 1)
+		color: rgba(110, 110, 115, 1)
+.item__top__power
+	border: 1px solid $red
+.personal-table
+	.item__managers__table
+		background: #EAECEE
+.moder-statistic__row2-inner
+	gap: 24px
+	display: flex
+.moder-statistic__row2
+	display: block
+.header-footer__title-desc
+	display: block
+.header-footer__title-mob
+	display: none
+.login__plate__form
+	.check-text-block
+		font-size: 14px
+		p
+
+			a
+				margin-left: 5px
+				display: inline
+				text-decoration: underline
+		.check-text
+			margin-top: -3px
+.mob
+	display: none
+.login .error input
+	border: none
+.art-back
+	position: absolute
+	top: 20px
+	left: 10px
+	&:hover
+		svg
+			transform: translateX(-10px)
+.login-btns
+	gap: 10px
+	.btn
+		padding: 15px 0
+	.removepass
+		margin: 0
+		background: rgba(245, 247, 249, 1)
+		&:hover
+			background: #e3e5e7
+.popup-decline
+	max-width: 400px
+.popup-decline__wrapper
+	gap: 10px
+.popup-login .btn
+	width: 100%
+.register-row
+	gap: 10px
+	.login__plate__form__item
+		width: 50%
+.login
+	.check-text-block
+		margin-bottom: 30px
+		p
+			color: rgba(110, 110, 115, 1)
+		a
+			color: $blue
+.item__top__name-new
+
+	font-weight: 400!important
+	a
+		display: inline-block
+		color: $blue
+.border-bon
+	margin-bottom: 20px
+	strong
+		font-weight: 700
+		border-radius: 50px
+		border: 2px solid rgba(255, 221, 45, 1)
+		padding: 5px 10px
+		margin-left: 10px
+.item-vac-bottom
+	.border-bon
+		margin-bottom: 0
+	.item__date
+		margin-left: 0
+.menu__right li
+	max-height: 24px
+.left-menu__ads
+	cursor: pointer
+menu
+	position: relative
+.menu-drop
+	position: absolute
+	right: 0
+	z-index: 11
+	top: 50px
+	background: #fff
+	padding: 30px
+	border-radius: 24px
+	box-shadow: 7px 20px 23px rgba(181, 195, 212, 0.1)
+	width: 100%
+	max-width: 400px
+	display: none
+	&__img
+		width: 48px
+		height: 48px
+	h2
+		font-size: 24px
+		margin: 0
+	&__row
+		justify-content: space-between
+		align-items: center
+		align-items: center
+		gap: 15px
+		border-bottom: 1px solid rgba(242, 242, 242, 1)
+		padding-bottom: 10px
+	.item__row
+		margin-bottom: 20px
+	.btn
+		width: 100%
+.menu-drop-reg
+	&__img
+		width: 48px
+		height: 48px
+		text-align: center
+		position: relative
+		margin: 0 auto
+		margin-bottom: 20px
+		img
+			border: 3px solid rgba(242, 242, 242, 1)
+			border-radius: 100px
+	.btn
+		margin-bottom: 10px
+	.drop-load
+		position: absolute
+		right: 0
+		bottom: -10px
+	.drop-name
+		padding-bottom: 10px
+		border-bottom: 1px solid rgba(242, 242, 242, 1)
+	form
+		p
+			margin-bottom: 10px
+.coockie
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	.success-plate
+		width: 100%
+		max-width: 400px
+		background: rgba(242, 242, 242, 1)
+.btn-white
+	background: #fff
+	color: $text
+	&:hover
+		color: #fff
+		background: $text
+.grey-bg
+	span
+		background: rgba(234, 236, 238, 1)
+.moder-row-top__status.green
+	background: rgba(219, 247, 229, 1)
+	padding: 5px 10px
+	border-radius: 5px
+.pdf
+	color: $blue
+	display: flex
+	align-items: center
+	gap: 5px
+.moder-statistic-standart
+	padding: 0
+	padding-top: 10px
+.moder-lk .moder-statistic
+	margin-bottom: 0
+.item__history-new
+	.tag
+		font-size: 16px
+		background: none
+	.tag.noactive
+		color: rgba(183, 183, 185, 1)
+	.tag.green
+		color: $green!important
+	.tag.red strong
+		color: $red
+	.tag.orange strong
+		color: $red
+.w544
+	width: 100%
+	max-width: 544px
+.popupsorcer-block
+	&:not(:last-of-type)
+		border-bottom: 1px solid rgba(242, 242, 242, 1)
+		margin-bottom: 15px
+.addsorcer
+	display: flex
+	align-items: center
+	gap: 5px
+	font-size: 20px
+	margin-bottom: 20px
+	&:hover
+		color: $orange
+		svg
+			path
+				stroke: $orange
+.red-boost
+	border-color: $red
+.klient__status .moder-row-top__status
+	width: 130px!important
+.klient__status .selectize-dropdown
+	top: 25px!important
+	width: 130px!important
+	left: -10px!important
+.klient__status .selectize-input .item, .klient__status  .selectize-input
+	background: none!important
+.klient__status .selectize-input:after
+	right: -2px!important
+.klient__status .selectize-control.single .selectize-input
+	padding: 0
+#stat2, #stat1, #stat3
+	width: 100%
+	max-width: 544px
+.row-popup
+	gap: 10px
+.simple-disabled
+	display: flex
+	flex-direction: column
+	gap: 10px

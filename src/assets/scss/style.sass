@@ -1,0 +1,226 @@
+@import "vars"
+@import "fonts.sass"
+
+input[type='number']
+	-moz-appearance: textfield
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+
+input, textarea, a, button
+	-webkit-appearance: none
+	-moz-appearance: none
+
+body
+	background: #fff
+	box-sizing: border-box
+	padding: 0!important
+	margin: 0
+	overflow-x: hidden
+	font-family: 'SourceSansPro', sans-serif
+	color: $text
+	font-weight: 400
+	-webkit-text-size-adjust: none
+	padding: 0 10px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+	@include trans
+	*
+		@include trans
+li
+	display: block
+
+ul
+	padding: 0
+	margin: 0
+
+p
+	margin: 0
+	font-family: 'SourceSansPro', sans-serif
+
+textarea
+	font-family: 'SourceSansPro', sans-serif
+	font-size: 14px
+	resize: none
+a
+	text-decoration: none
+	color: $text
+	display: block
+	&:hover
+		color: $blue
+		@include trans
+
+// input[type=text], 
+// input[type=submit], 
+// textarea
+// 	appearance: none
+
+*,
+*:before,
+*:after
+	box-sizing: border-box
+
+input:active, input:focus, button:active, button:focus, span:active, span:focus, span, div:active, div:focus, div, textarea:active, textarea:focus, select:active, select:focus
+	outline: none
+
+textarea, input
+	font-family: 'SourceSansPro', sans-serif
+	letter-spacing: 0
+
+button
+	font-family: 'SourceSansPro', sans-serif
+	background: none
+	cursor: pointer
+	border: none
+	font-size: 16px
+	&:disabled
+		opacity: .5
+		cursor: auto!important
+h1
+	font-size: 40px
+	color: #000
+	font-weight: 600
+h1, h2
+	margin: 0
+	font-family: 'SourceSansPro', sans-serif
+
+h2
+	font-size: 28px
+	font-weight: 600
+	margin-bottom: 40px
+	color: $text
+
+h3
+	font-size: 30px
+	font-family: 'SourceSansPro', sans-serif
+	margin-top: 0
+	font-weight: 600
+
+section
+	margin-bottom: 100px
+.swiper-wrapper
+	height: auto!important
+
+//*********** Переменные **************
+.container
+	width: 1280px
+	margin: 0 auto
+	position: relative
+	overflow: hidden
+.row
+	display: flex
+.row-center
+	justify-content: center
+.align-center
+	align-items: center
+.row-space
+	justify-content: space-between
+.column
+	flex-direction: column
+.overflow-body
+	overflow-y: hidden
+
+.btn
+	border-radius: 8px
+	color: #fff
+	font-size: 16px
+	background: #2B2B2B
+	cursor: pointer
+	font-weight: 400
+	padding: 12px 32px
+	font-size: 15px
+	font-weight: 400
+	&:hover
+		color: #2B2B2B
+		background: $orange
+		@include trans
+.round-btn
+	border-radius: 55px
+	padding: 8px 20px
+	font-weight: 700
+.btn-orange
+	background: #FFDD2D
+	color: $text
+	&:hover
+		color: $text
+		background: #dfc026
+		@include trans
+.btn-header
+	background: #FCC722
+	&:hover
+		color: $text
+		background: #dfc026
+		@include trans
+.btn-border
+	background: #f5f7f9
+	border: 1px solid $orange
+	color: $text
+.card__btn
+	background: #821BF0
+	padding: 20px 40px
+	display: flex
+	align-items: center
+	justify-content: center
+	box-shadow: 3px 5px 15px rgba(130, 27, 240, 0.25)
+	&:hover
+		background: #9336F8
+		@include trans
+.in-cart
+	background: #4F28EA
+	padding: 17px 60px
+	display: flex
+	align-items: center
+	justify-content: center
+	&:hover
+		background: #7250FA
+		@include trans
+.btn-line
+	background: transparent
+
+	display: flex
+	align-items: center
+	justify-content: center
+	color: $red
+	border: 1px solid $red
+	&:hover
+		background: $red
+		@include trans
+.hidden-body
+	overflow: hidden
+.bread
+	flex-wrap: wrap
+	li
+		margin-bottom: 5px
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%))
+	::-webkit-scrollbar
+		width: $size
+		height: $size
+	::-webkit-scrollbar-thumb
+		background: $blue
+	::-webkit-scrollbar-track
+		background: #d1d1d1
+
+@include scrollbars(.5em, slategray)
+
+@media screen and (max-width: 979px)
+	.mobile-col
+		flex-direction: column
+	.mobile-col-rev
+		flex-direction: column-reverse
+	.mobile__none
+		display: none
+	.container
+		width: 100%
+		padding: 0 4vw
+
+@media screen and (min-width: 980px) and (max-width: 1280px)
+	.container
+		width: 980px
+		padding: 0 10px
+
+@import "parts/styles"
+@import "parts/media"

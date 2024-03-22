@@ -1,0 +1,155 @@
+@@include('partials/head.html', {
+"title": "Вход"
+})
+<div class="menu-wrapper">
+	@@include('partials/menu-login.html', {})
+</div>
+
+<div class="login">
+	<div class="container">
+		<div class="login__plate">
+			<h2>Создание пароля</h2>
+			<div class="login__plate__form">
+				<form>
+					<div class="login__plate__form__item">
+						<span>Придумайте новый пароль</span>
+						<label class="row">
+							<input type="password" placeholder="Введите пароль">
+							<div class="login__showpass">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_483_10382)">
+										<path
+											d="M11.9603 11.9599C10.8207 12.8285 9.43306 13.3098 8.00033 13.3332C3.33366 13.3332 0.666992 7.99985 0.666992 7.99985C1.49625 6.45445 2.64642 5.10426 4.04033 4.03985M6.60033 2.82652C7.05921 2.71911 7.52904 2.66541 8.00033 2.66652C12.667 2.66652 15.3337 7.99985 15.3337 7.99985C14.929 8.75693 14.4464 9.46968 13.8937 10.1265M9.41366 9.41319C9.23056 9.60969 9.00976 9.76729 8.76443 9.8766C8.5191 9.98591 8.25426 10.0447 7.98572 10.0494C7.71718 10.0542 7.45043 10.0048 7.2014 9.90418C6.95236 9.80359 6.72614 9.65387 6.53622 9.46396C6.34631 9.27404 6.19659 9.04782 6.096 8.79878C5.99541 8.54975 5.94601 8.283 5.95075 8.01446C5.95549 7.74592 6.01426 7.48108 6.12358 7.23575C6.23289 6.99042 6.39049 6.76962 6.58699 6.58652"
+											stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M0.666992 0.666504L15.3337 15.3332" stroke="#6E6E73" stroke-width="1.3"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0_483_10382">
+											<rect width="16" height="16" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</div>
+						</label>
+					</div>
+					<div class="login__plate__form__item">
+						<span>Повторите пароль</span>
+						<label class="row">
+							<input type="password" placeholder="Введите пароль">
+							<div class="login__showpass">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_483_10382)">
+										<path
+											d="M11.9603 11.9599C10.8207 12.8285 9.43306 13.3098 8.00033 13.3332C3.33366 13.3332 0.666992 7.99985 0.666992 7.99985C1.49625 6.45445 2.64642 5.10426 4.04033 4.03985M6.60033 2.82652C7.05921 2.71911 7.52904 2.66541 8.00033 2.66652C12.667 2.66652 15.3337 7.99985 15.3337 7.99985C14.929 8.75693 14.4464 9.46968 13.8937 10.1265M9.41366 9.41319C9.23056 9.60969 9.00976 9.76729 8.76443 9.8766C8.5191 9.98591 8.25426 10.0447 7.98572 10.0494C7.71718 10.0542 7.45043 10.0048 7.2014 9.90418C6.95236 9.80359 6.72614 9.65387 6.53622 9.46396C6.34631 9.27404 6.19659 9.04782 6.096 8.79878C5.99541 8.54975 5.94601 8.283 5.95075 8.01446C5.95549 7.74592 6.01426 7.48108 6.12358 7.23575C6.23289 6.99042 6.39049 6.76962 6.58699 6.58652"
+											stroke="#6E6E73" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M0.666992 0.666504L15.3337 15.3332" stroke="#6E6E73" stroke-width="1.3"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0_483_10382">
+											<rect width="16" height="16" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</div>
+						</label>
+					</div>
+					<button class="btn btn-orange">Сохранить</button>
+
+				</form>
+
+				<div class="popup-decline popup-login" id="login-content1">
+					<div class="popup-decline__top row">
+						<a href="" class="back">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</a>
+						<div class="popup-decline__title">
+							Восстановление пароля
+						</div>
+					</div>
+					<p>
+						Для восстановления доступа к системе вам будет отправлен одноразовый код
+					</p>
+					<div class="popup-decline__wrapper row">
+
+						<button class="btn btn-border" data-fancybox data-src="#login-content2">Отправить email</button>
+						<button class="btn btn-orange" data-fancybox data-src="#login-content3">Отправить СМС </button>
+
+					</div>
+				</div>
+
+				<div class="popup-decline popup-login" id="login-content2">
+					<div class="popup-decline__top row">
+						<a href="" class="back">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</a>
+						<div class="popup-decline__title">
+							Код отправлен
+						</div>
+					</div>
+					<p>
+						Мы отправили одноразовый код на номер <span>+7(928)*****90</span>
+					</p>
+					<div class="popup-login__code">
+						<span>Код из СМС</span>
+						<form action="">
+							<input type="number" placeholder="_">
+							<input type="number" placeholder="_">
+							<input type="number" placeholder="_">
+							<input type="number" placeholder="_">
+						</form>
+						<div class="popup-login__code__remove">
+							<a href="">Отправить повторно</a> через: 00:59
+						</div>
+					</div>
+				</div>
+				<div class="popup-decline popup-login" id="login-content3">
+					<div class="popup-decline__top row">
+						<a href="" class="back">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</a>
+						<div class="popup-decline__title">
+							Код отправлен
+						</div>
+					</div>
+					<p>
+						Мы отправили одноразовый код на email <span>be******ls_95@mail.ru</span>
+					</p>
+					<div class="popup-login__code">
+						<span>Код из СМС</span>
+						<form action="">
+							<input type="number">
+							<input type="number">
+							<input type="number">
+							<input type="number">
+						</form>
+						<div class="popup-login__code__remove">
+							<a href="">Отправить повторно</a> через: 00:59
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@@include('partials/footer2.html', {})
+@@include('partials/scripts.html', {})

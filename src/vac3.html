@@ -1,0 +1,197 @@
+@@include('partials/head.html', {
+"title": "Вакансии рекомендовать кандидата"
+})
+<div class="menu-wrapper no-mob">
+	@@include('partials/menu.html', {})
+</div>
+
+<section class="single">
+	<div class="container">
+		<div class="mob-back row row-space">
+			<a href="">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15 18L9 12L15 6" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</a>
+			<h2 class="title">Рекомендовать</h2>
+
+		</div>
+		<div class="columns__right recommend">
+			<div class="item item-full">
+				<div class="recommend__top row">
+					<a href="" class="item__back">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19 12H5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M12 19L5 12L12 5" stroke="#2B2B2B" stroke-width="1.3" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+
+					</a>
+					<h2 class="desc">Рекомендовать кандидата </h2>
+				</div>
+				<div class="item__top row">
+					<div class="item__top__left">
+						<div class="item__top__logo mob vac-mob-logo">
+							<img src="assets/img/logo4.png" alt="">
+						</div>
+						<a href="" class="item__top__prof">Java Developer</a>
+						<p class="item__top__name">в Profit</p>
+						<div class="item__row">
+							<div class="row align-center popup-row popup-row-normal">
+								от 250 000 до 400 000 р/мес на руки
+
+							</div>
+							<div class="tags">
+								<a href="" class="tag">Санкт-Петербург</a>
+								<a href="" class="tag">Москва</a>
+								<a href="" class="tag orange">Офис или гибрид</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="item__top__right">
+						<div class="item__min__logo desc">
+							<img src="assets/img/logo4.png" alt="">
+						</div>
+					</div>
+
+				</div>
+				<div class="recommend__form">
+					<div class="recommend__form__top">
+						<div class="recommend__form__title">
+							Данные кандидата
+						</div>
+						<div class="recommend__form__descr">
+							Пожалуйста, заполните основную информацию о рекомендуемом кандидате. Это поможет работодателю
+							сделать выбор.
+						</div>
+					</div>
+					<form>
+						<div class="recommend__form__grid">
+							<label class="recommend-input" id="name">
+								<span>
+									Имя и Фамилия
+								</span>
+								<input type="text">
+								<ul class="name-same">
+									<li data-name="Александр Смирнов">Александр <span>&nbsp; Смирнов</span></li>
+									<li data-name="Александр Петров">Александр <span> &nbsp; Петров</span></li>
+									<li data-name="Александра Петрова">Александр <span>а Петрова</span></li>
+								</ul>
+							</label>
+							<label class="recommend-input">
+								<span>
+									Локация
+								</span>
+								<input type="text">
+							</label>
+							<label class="recommend-input">
+								<span>
+									Телефон / Telegram
+								</span>
+								<input type="text">
+							</label>
+							<label class="recommend-input">
+								<span>
+									Email
+								</span>
+								<input type="text">
+							</label>
+
+						</div>
+						<div class="recommend__upload">
+							<label class="recommend__upload__top">
+								<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_493_9567)">
+										<path
+											d="M28 0C20.5756 0 13.4487 2.95181 8.20312 8.20094C2.95209 13.4521 0.00145456 20.5738 0 28C0 35.4231 2.95312 42.5499 8.20312 47.7991C13.4487 53.0482 20.5756 56 28 56C35.4244 56 42.5513 53.0482 47.7969 47.7991C53.0469 42.5499 56 35.4231 56 28C56 20.5769 53.0469 13.4501 47.7969 8.20094C42.5513 2.95181 35.4244 0 28 0Z"
+											fill="#FCC722" />
+										<path d="M34 34L28 28L22 34" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path d="M28 28V41.5" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M40.5849 37.5852C42.048 36.7876 43.2037 35.5255 43.8698 33.9982C44.5358 32.4708 44.6743 30.7651 44.2633 29.1503C43.8522 27.5354 42.9152 26.1035 41.5999 25.0804C40.2847 24.0573 38.6662 23.5013 36.9999 23.5002H35.1099C34.6559 21.7441 33.8097 20.1137 32.6349 18.7317C31.46 17.3497 29.9872 16.252 28.3271 15.5211C26.667 14.7903 24.8628 14.4453 23.0501 14.512C21.2375 14.5788 19.4635 15.0557 17.8617 15.9067C16.2599 16.7578 14.8718 17.9609 13.8019 19.4256C12.7319 20.8903 12.008 22.5785 11.6844 24.3633C11.3608 26.1481 11.4461 27.983 11.9338 29.7301C12.4214 31.4772 13.2988 33.091 14.4999 34.4502"
+											stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M34 34L28 28L22 34" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</g>
+									<defs>
+										<clipPath id="clip0_493_9567">
+											<rect width="56" height="56" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+								<span>Загрузить резюме</span>
+								<input type="file">
+							</label>
+							<ul class="recommend__upload__descr">
+								<li>Word, PDF</li>
+								<li>Не более 10 МБ</li>
+								<li>Пожалуйста, убедитесь в актуальности данных</li>
+							</ul>
+							<p>или вставить ссылку</p>
+							<label class="recommend-input">
+								<span>
+									Ссылка на резюме
+								</span>
+								<input type="text">
+							</label>
+						</div>
+						<div class="recommend__form__grid__bottom  row">
+							<div class="recommend__form__grid__bottom__left vac-cols">
+								<label class="recommend-input">
+									<span>Валюта зарплаты</span>
+									<div class="sel">
+										<select>
+											<option value="Рубли">Рубли</option>
+											<option value="Доллары">Доллары</option>
+										</select>
+									</div>
+								</label>
+								<label class="recommend-input">
+									<span>Зарплата р/мес </span>
+									<input type="text" placeholder="200 000" class="number-format">
+								</label>
+							</div>
+							<div class="recommend__form__grid__bottom__right">
+								<label class="recommend-input">
+									<span>
+										Дополнительная информация / Комментарий
+									</span>
+									<textarea></textarea>
+								</label>
+							</div>
+
+						</div>
+						<div class="recommend__form__politics">
+							<label class="check recommend-check">
+								<input type="checkbox" name="price">
+								<span>Кандидат ознакомлен с данной вакансией</span>
+							</label>
+							<p>
+								Согласно п. 1.7 <a href="">Политики обработки персональных</a> данных сервиса рекомендатель
+								может рекомендовать кандидата только в случае, если он получил от него согласие на обработку
+								персональных данных и уведомил соискателя о размещении его персональной информации на сайте, а
+								также несет ответственность за ее передачу оператору и за распространение персональных данных
+								соискателя.
+							</p>
+						</div>
+						<div class="item-vac-bottom recommend__form__bottom row row-space align-center">
+							<div class="recommend__form__bottom__left item-bon border-bon ">
+								Бонус на рекомендацию: <strong>75 000 р</strong>
+							</div>
+							<a href="" class="btn btn-orange">Отправить рекомендацию</a>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('partials/footer2.html', {})
+@@include('partials/scripts.html', {})

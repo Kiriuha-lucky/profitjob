@@ -1,0 +1,1000 @@
+@media screen and (max-width: 980px)
+	.menu
+		display: none
+	.mobile-menu--trigger
+		div
+			width: 27px
+			height: 1px
+			background: $text
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom: 0
+	.mobile-menu
+		padding: 10px 0
+		display: flex
+		.container
+			align-items: center
+		&__tg
+			height: 24px
+	footer
+		.footer__top
+			flex-direction: column
+			gap: 16px
+		.footer__col__title
+			margin-bottom: 16px
+		.footer__bottom
+			.row
+				flex-direction: column
+			ul
+				li
+					margin-bottom: 8px
+					margin-right: 0
+					padding-right: 0
+				li:not(:last-child)
+					border: none
+			p
+				margin-bottom: 12px
+	.left-menu
+		width: 100%
+		min-width: 100%
+		position: relative
+		top: auto
+		background: none
+		padding: 0
+		display: none
+		border-radius: 0
+	.search
+		.left-menu
+			margin-top: 20px
+	.chips
+		font-size: 14px
+	.columns
+		.container
+			flex-direction: column
+	.search
+		padding: 0
+		background: none
+		input
+			margin-left: 8px
+			font-size: 14px
+		svg
+			min-width: 16px
+			height: 16px
+		&__wrapper
+			padding: 12px 16px
+			border-radius: 24px
+			align-items: center
+			background: #fff
+		.btn
+			margin-top: 16px
+			width: 100%
+		.search--trigger
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			div
+				width: 16px
+				height: 2px
+				border-radius: 10px
+				background: $text
+				margin-bottom: 3px
+				&:nth-child(2)
+					width: 11px
+				&:last-child
+					margin-bottom: 0
+					width: 7px
+			&:hover
+				div
+					&:nth-child(2)
+						width: 16px
+					&:last-child
+						width: 16px
+	.search-desc
+		display: none
+	.search-mob
+		display: block
+	.item
+		padding: 16px
+		.item__full__logo
+			margin-top: 0
+			width: 36px
+			height: 36px
+			img
+				width: 36px
+				height: 36px
+				border-radius: 8px
+	.item__bottom
+		margin-top: 8px
+		align-items: flex-start
+		flex-direction: column
+		.item__bottom__btns
+			order: 2
+			width: 100%
+			flex-direction: column
+			gap: 8px
+		.item__date
+			margin-left: 0
+			margin-bottom: 16px
+			order: 1
+		.btn
+			width: 100%
+			text-align: center
+	.similar__item
+		padding: 17px
+		flex-direction: column
+	.similar__item__center
+		margin: 16px 0
+		text-align: center
+	.similar__item__right
+		margin: 0 auto
+	.item__top__download
+		display: none
+	.item__back
+		display: none
+	.mob-back
+		display: flex
+		margin-bottom: 24px
+		align-items: center
+		position: relative
+		a
+			position: absolute
+			left: 0
+			top: 5px
+		.title
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+			margin: 0 auto
+
+	.recommend
+		margin-top: 50px
+	.check
+		padding-left: 35px
+		span
+			margin-left: 0
+	.recommend__form__bottom
+		flex-direction: column
+		align-items: flex-start
+		.btn
+			margin-left: 0
+			margin-top: 20px
+			width: 100%
+	.item__info
+		flex-wrap: wrap
+		gap: 20px
+	.recommend2-subscribe .subscribe__tg
+		font-size: 16px
+	.columns, .single
+		margin-top: 20px
+	.no-mob
+		display: none
+	.item__moder__person__top
+		flex-direction: column
+		div
+			display: none
+	.similar__all
+		position: absolute
+		bottom: -20px
+		left: 50%
+		transform: translateX(-50%)
+	.columns__menu__right
+		width: 100%
+		white-space: nowrap
+		overflow-x: auto
+		padding-bottom: 12px
+		&:-webkit-scrollbar-thumb
+			height: 2px
+		&::-webkit-scrollbar-track
+			background: #d1d1d1
+			height: 2px
+		&::-webkit-scrollbar
+			height: 2px
+	.login
+		margin-top: 24px
+		&__plate
+			padding: 16px
+		.login__plate__top__item
+			font-size: 24px
+	.success-plate
+		margin-top: 24px
+	.popup-decline__top
+		flex-wrap: wrap
+		gap: 10px
+	.recommend__form__grid__bottom__left
+		width: 100%
+	.recommend__form__grid__bottom__right
+		width: 100%
+	.recommend__form__grid__bottom
+		flex-wrap: wrap
+	.item-bottom__moder
+		.item__moder__person__bottom
+			.btn
+				max-width: 250px
+	.left-menu__range
+		input
+			background: #fff
+	.faq-new
+		margin-left: 0
+	.faq-menu
+		.left-menu
+			display: block
+	.faq__item__btns
+		flex-wrap: wrap
+		.btn
+			width: 100%
+	.recommend__form__bottom-smm
+		.btn
+			margin: 0
+	.item__top-sourcer
+		flex-direction: column-reverse
+		gap: 10px
+	.moder-row-top
+		flex-direction: column
+		.item__top__boost
+			margin-left: 0
+			margin-top: 10px
+			width: fit-content
+	.mycompany
+		&__cards
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 10px
+	.item__managers__table
+		overflow: hidden
+		overflow-x: auto
+		border-radius: 24px 24px 0 0
+		table
+			white-space: nowrap
+		&::-webkit-scrollbar
+			height: 2px
+		&::-webkit-scrollbar-track
+			background: #d1d1d1
+			height: 2px
+		&::-webkit-scrollbar-thumb
+			background: rgba(0,0,0.5)
+			height: 2px
+	.mycompany
+		.item__top__left
+			width: 100%
+		.item__top
+			flex-direction: column-reverse
+		.item__top__right
+			margin-left: 0
+			margin-bottom: 20px
+	.item__managers__btns
+		flex-direction: column
+		align-items: center
+		.btn
+			width: 100%
+			max-width: 350px
+	.mycompany
+		.item__full__logo
+			min-height: 100px
+			img
+				margin-bottom: 10px
+				height: 100px
+				width: 100px
+		.logo-edit__btn
+			margin-top: 10px
+	.candidat
+		.item__title
+			margin-bottom: 20px
+			flex-wrap: wrap
+			gap: 10px
+		.item__top__boost
+			margin-left: 0
+	.item__bottom__candidat
+		.item__bottom__btns__row
+			flex-wrap: wrap
+			flex-direction: row-reverse
+		.item__bottom__btns__right
+			flex-direction: column-reverse
+			margin: 10px 0
+			gap: 10px
+		.item__date
+			margin: 0
+			width: 100%
+			margin-bottom: 20px
+			margin-top: 10px
+			order: 0
+	.item__bottom__btns__right
+		width: 100%
+		.btn
+			width: 100%
+			text-align: center
+	.candidat__btn__trigger
+		width: 100%
+	.candidat-subscribe .btn
+		font-size: 15px
+		padding: 12px
+		width: 100%
+		justify-content: center
+		gap: 2px
+	.item__bottom__candidat2
+		align-items: center
+		justify-content: center
+	.candidat-deadline
+		flex-direction: column-reverse
+		.ask-popup
+			right: 112px
+			width: 131px!important
+		.btn
+			width: calc(100% - 19px)
+	.candidat
+		.item__top__download
+			display: flex
+	.recommend-input .selectize-control.single .selectize-input
+		height: 60px
+	.selectize-input .item
+		width: 90%
+	.selectize-dropdown
+		top: 22px!important
+
+	.item__bottom__candidat-simple
+		.item__bottom__btns__row
+			flex-wrap: nowrap
+			flex-direction: row
+			align-items: center
+		.item__date
+			margin: 0
+		.item__bottom__btns__right
+			width: auto
+	.personal2
+		.item__managers__top
+			flex-wrap: wrap
+			gap: 10px
+			justify-content: center
+		.item__managers__btns .btn
+			width: 100%
+	.item__row__data
+		gap: 15px
+	.personal6
+		.columns__right
+			margin-top: 0px
+	.personal8
+		.moder-row-top
+			margin-bottom: 10px
+	.header
+		h1
+			font-size: 32px
+			margin-bottom: 12px
+		.header__top
+			margin-bottom: 24px
+			p
+				font-size: 14px
+		.swiper-container-header__left
+			width: 310px
+			height: 310px
+			text-align: center
+			margin: 0 auto
+			margin-bottom: 20px
+			max-width: 350px
+			display: none
+		.nav-btn
+			display: none
+		.item__top__right
+			margin-top: 10px
+			img
+				width: 100px
+		.item__bottom
+			width: 100%
+			max-width: 400px
+			margin-top: 24px
+			margin-left: auto
+			margin-right: auto
+			.btn
+				width: 100%
+		.swiper-container-header
+			.swiper-slide
+				height: auto
+				flex-direction: column
+				img
+					object-fit: cover
+		.swiper-container-header__nav
+			position: relative
+			bottom: auto
+			left: auto
+			margin: 0 auto
+			text-align: center
+			margin-bottom: 20px
+		.swiper-container-header__page
+			position: absolute
+			top: 180px
+			width: 100%
+			justify-content: space-between
+	.header-section
+		padding: 25px 0
+		h2
+			font-size: 24px
+	.forwho__item
+		padding: 16px
+		height: auto
+		justify-content: flex-end
+		flex-direction: column-reverse
+		li
+			font-size: 16px
+	.forwho__item__left, .forwho__item__right
+		width: 100%
+	.forwho__item__right
+		text-align: center
+		img
+			max-width: 150px
+	.forwho__item__title
+		margin-bottom: 16px
+		font-size: 20px
+	.paidfor
+		.nav-btn
+			display: none
+		.container
+			padding: 0
+	.paidfor .swiper-container-cards
+		padding: 0 4vw
+	.howwork
+		.howwork__item1::after
+			display: none
+		.howwork__item5::after
+			content: ''
+			position: absolute
+			top: -134px
+			right: 20px
+			left: auto
+			background: url('../img/arr2.png') no-repeat center
+			width: 156px
+			height: 156px
+		&__item
+			width: 246px
+			flex-direction: column-reverse
+			height: 195px
+			position: relative
+			&::before
+				display: none
+			&:nth-child(even)
+				margin-left: auto
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					top: -134px
+					right: -17px
+					transform: rotate(90deg)
+					background: url('../img/arr.png') no-repeat center
+					width: 156px
+					height: 156px
+			&:nth-child(odd)
+				margin-left: 0
+				&::after
+					content: ''
+					position: absolute
+					top: -134px
+					right: 97px
+					left: auto
+					transform: rotate(90deg)
+					background: url('../img/arr2.png') no-repeat center
+					width: 156px
+					height: 156px
+		.howwork__right
+			img
+				width: 70px
+				height: 70px
+				object-fit: contain
+		.howwork__left
+			width: 100%
+			text-align: center
+			margin-top: 20px
+		&__wrapper
+			flex-direction: column
+			gap: 30px 0
+			max-width: 400px
+			margin: 0 auto
+	.recomendations__wrapper
+		grid-template-columns: repeat(1, 1fr)
+		img
+			height: 210px
+		.recomendations__item
+			max-width: 450px
+			margin: 0 auto
+			span
+				font-size: 16px
+			p
+				font-size: 20px
+	.formats__row
+		flex-direction: column-reverse
+		.formats__right
+			max-width: 450px
+			margin: 0 auto
+			padding: 16px
+		.formats__left
+			padding: 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+			background: none
+			max-width: 450px
+			margin: 0 auto
+			p
+				font-size: 20px
+			li
+				font-size: 16px
+		.btn
+			width: 100%
+			max-width: 400px
+			margin-left: auto
+			margin-right: auto
+			font-size: 16px
+	.header-faq__show
+		font-size: 20px
+	.header-faq__hide
+		font-size: 16px
+	.header-faq__plate
+		font-size: 16px
+		padding: 12px
+		br
+			display: none
+	.forms__right
+		display: none
+	.forms__left p
+		font-size: 16px
+		text-align: center
+		margin-bottom: 24px
+	.forms__title
+		font-size: 24px
+		margin-bottom: 16px
+	.forms
+		form
+			padding: 16px
+		.btn
+			width: 100%
+			max-width: 400px
+			margin: 0 auto
+	.forms .login__plate__form__item input
+		padding: 8px 12px
+		font-size: 14px
+	.header-footer__wrapper
+		display: grid
+		grid-gap: 10px
+		grid-template-columns: repeat(2, 1fr)
+	.header-footer__title
+		font-size: 20px
+		white-space: wrap
+		width: 90%
+	.header-footer__col
+		width: 50%
+		grid-gap: 10px
+		ul
+			width: 100%!important
+		li
+			font-size: 14px
+			width: 100px
+	.header-footer__col:nth-child(2)
+		margin-top: 0px
+
+	.header-footer__col:nth-child(3), .header-footer__col:nth-child(4)
+		margin-top: 0
+		grid-column-start: 1
+		grid-column-end: 3
+		max-width: 100%
+		width: 100%
+		.header-footer__title
+			font-size: 16px
+			white-space: wrap
+		.header-footer__block
+			display: grid
+			grid-gap: 8px
+			grid-template-columns: repeat(2, 1fr)
+			ul
+				width: 50%
+	.inner-faq__top
+		.search
+			display: flex
+			flex-direction: column
+			position: relative
+			svg
+				position: absolute
+				top: 9px
+				left: 0
+			input
+				padding: 8px 12px
+				padding-left: 30px
+				background: #fff
+				border-radius: 20px
+	.inner-faq .inner-faq__inner-selects
+		gap: 10px
+		flex-wrap: wrap
+		justify-content: flex-start
+	.inner-faq .swiper-slide
+		font-size: 16px
+	.inner-faq .header-faq__wrapper
+		padding: 16px
+	.inner-faq .inner-faq__descr
+		font-size: 16px
+	.inner-faq
+		h2
+			margin-bottom: 15px
+	.blog
+		padding: 8px
+	.blog__wrapper__item
+		padding: 16px
+	.blog__wrapper
+		grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) )
+		p
+			font-size: 20px
+		span
+			font-size: 14px
+	.blog__wrapper__link
+		font-size: 16px
+	.inner-faq__top .search
+		max-width: 400px
+	.article__tags__item1, .article__tags__item2
+		font-size: 14px
+	.article__cover
+		height: 30vw
+		max-height: 400px
+	.article article h2
+		font-weight: 600
+		font-size: 20px
+	.article__wrapper
+		padding: 16px
+	.article__nav
+		span
+			display: none
+	.com-header__left
+		width: 100%
+	.com-header__right
+		width: 100%
+		img
+			object-fit: cover
+			border-radius: 12px
+	.popup-registr
+		padding: 17px
+	.com-header
+		h1
+			font-size: 24px
+			margin-bottom: 12px
+			font-weight: 700
+			text-align: center
+		p
+			margin-bottom: 24px
+			font-size: 14px
+			text-align: center
+		.btn
+			text-align: center
+			font-size: 15px
+			width: 100%
+			max-width: 400px
+			margin: 0 auto
+		.container
+			flex-direction: column
+	.com-cards__item
+		p
+			font-size: 20px
+		span
+			font-size: 16px
+	.com-ref__left
+		width: 100%
+		grid-template-columns: 1fr
+		img
+			width: 100%
+			height: 240px
+			object-fit: cover
+	.com-ref__right
+		display: none
+
+	.com-ref__block
+		h3
+			font-size: 20px
+		p
+			font-size: 16px
+			text-align: left
+	.com-ref__item.active-mob
+		.com-ref__block
+			display: block
+	.com-ref__item
+		max-width: 400px
+		margin-left: auto
+		margin-right: auto
+		width: 100%
+		&:hover
+			color: $text
+	.com-ref__block-mob
+		margin-top: 16px
+		strong
+			margin-top: 16px
+			display: block
+		p
+			font-weight: 400
+	.com-ref__item > p
+		text-align: left
+		max-width: 95%
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			right: -5%
+			background: url('../files/arrsel.svg') no-repeat center
+			width: 20px
+			height: 20px
+			top: 5px
+	.com-ref__item.active-mob > p
+		@include trans
+		&::after
+			@include trans
+			transform: rotate(-180deg)
+	.com-plan
+		padding-bottom: 0
+		h2
+			font-size: 26px
+			margin-bottom: 16px
+	.com-reg
+		margin-bottom: 30px
+		.container
+			flex-direction: column
+		&__left
+			width: 100%
+			text-align: center
+			margin-bottom: 20px
+		&__right
+			width: 100%
+			.row
+				flex-direction: column
+		form .row input
+				width: 100%
+		h2
+			font-size: 24px
+		p
+			font-size: 16px
+	.com-calc
+		.container
+			flex-direction: column-reverse
+		&__left
+			width: 100%
+		&__right
+			width: 100%
+		h2
+			font-size: 24px
+			margin-bottom: 16px
+		.com-calc__form
+			padding: 16px
+		.single
+			margin-top: 5px
+		p
+			font-size: 16px
+	.mobile-menu-main
+		display: block
+		.menu-profile
+			margin-left: auto
+			margin-right: 10px
+	.mobile-fixed
+		padding: 32px 0
+		text-align: center
+		display: none
+		&__title
+			font-size: 24px
+			font-style: normal
+			font-weight: 600
+		li
+			font-size: 20px
+			margin-bottom: 15px
+	.item__moder .ask-popup
+		width: 100%
+		position: relative
+		margin-top: 20px
+		margin-bottom: 20px
+	.mycomp-menu
+		h2
+			display: none
+	.mob-back__comp
+		.mycomp-menu__edit
+			display: block
+		h2
+			margin: 0 auto!important
+	.mycompany
+		.item__managers__top
+			flex-wrap: wrap
+			gap: 20px
+		.item__top
+			flex-direction: row
+		.item__full__logo
+			height: auto
+			img
+				width: 100%
+				height: 100%
+	.mycompany2
+		.item__top
+			flex-direction: column
+		.item__full__logo
+			width: 124px
+			height: 124px
+			margin: 0 auto 20px
+		.item__top__right
+			justify-content: center
+			align-items: center
+		.item__managers__btns
+			flex-direction: column-reverse
+	.moder-row-top__status
+		margin-left: 0
+	.td-abs
+		top: 0
+	.klient-item-status
+		margin: 0
+		margin-bottom: -21px
+	.klient2__bottom
+		.selectize-input
+			height: 41px!important
+	.klient2__poprow
+		gap: 20px
+		.selectize-control, .selectize-dropdown
+			width: 100%!important
+
+		.moder-row-top__status
+			margin-left: 0
+			margin-top: 0
+		.selectize-input
+			height: 41px!important
+		.selectize-control
+			margin-top: 0
+	.klient6
+		.recommend, .klient6-stat
+			padding: 20px
+	.klient7
+		&__row, .klient7__col__row
+			gap: 16px
+			flex-direction: column
+		.selectize-input
+			height: 41px!important
+		.selectize-control
+			margin-top: 0
+	.klient-boost__row
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+	.paidfor-top-prev, .paidfor-top-next
+		display: none
+	.paidfor__top
+		padding: 0 4vw
+	.moder-statistic__row2
+		.moder-statistic__col
+			width: 100%
+	.moder-statistic__row2-inner
+		flex-direction: column
+	.header
+		padding-top: 25px
+	.item-bon
+		font-weight: 700
+		strong
+			color: rgba(252, 199, 34, 1)
+	.mob
+		display: block
+	.vac-mob-logo
+		img
+			max-height: 50px
+	.desc
+		display: none
+	.vac-cols
+		width: 100%
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		gap: 10px
+		.recommend-input .selectize-control.single .selectize-input
+			height: 41px
+			margin-top: 0
+			font-size: 14px
+		.single
+			margin-top: 0
+		.recommend-input > span
+			margin-bottom: 10px
+		.selectize-dropdown
+			top: 39px !important
+		input
+			font-size: 14px
+	.item__top__logo
+		margin-bottom: 12px
+
+@media screen and (max-width: 680px)
+	.use-boost
+		text-align: center
+		flex-direction: column
+	.recommend__form__grid
+		grid-template-columns: 1fr
+	.recommend__form__grid__bottom
+		flex-direction: column
+	.item-bottom__moder
+		.item__moder__person__bottom
+			margin-top: 20px
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			gap: 10px
+			.btn
+				max-width: 250px
+	.moder-boost-row
+		margin-bottom: 20px
+		flex-wrap: wrap
+		gap: 10px
+		.moder-boost
+			margin: 0
+	.moder-plate
+		margin: 24px 0
+		&__top
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			text-align: center
+			gap: 10px
+	.moder-statistic__row
+		flex-wrap: wrap
+	.moder-statistic__col
+		width: 100%
+	.item__doc
+		border-radius: 5px
+	.paidfor__cards__bonus
+		font-weight: 700
+	.header-footer__title-desc
+		display: none
+	.header-footer__title-mob
+		display: block
+	.login-btns
+		flex-direction: column-reverse
+		.btn
+			width: 100%
+	.border-bon
+		strong
+			color: $text
+	.btn
+		text-align: center
+	.popup-decline__wrapper
+		flex-direction: column
+@media screen and (min-width: 981px) and (max-width: 1279px)
+	.left-menu
+		min-width: 320px
+		width: 320px
+	.left-menu__ads
+		padding: 16px
+	.columns__menu__right a
+		font-size: 14px
+	.candidat
+		.item__bottom__btns
+			border: none
+		.item__bottom__btns__row
+			align-items: center
+			width: 100%
+		.item__bottom__btns__right
+			gap: 16px
+	.paidfor__cards .page__left
+		left: 0
+	.paidfor__cards .page__right
+		right: 0
+	.howwork__wrapper
+		gap: 50px 40px
+	.howwork__item
+		max-width: 300px
+	.howwork__item5::after, .howwork__item4::after
+		width: 84px
+		height: 82px
+		background-size: contain
+		top: -90px
+	.header-section h2
+		font-size: 38px
+	.blog__wrapper
+		grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) )
+	.com-header__right img
+		object-fit: cover
+		border-radius: 12px
+	.com-header
+		h1
+			font-size: 32px
+		p
+			font-size: 18px
+		.btn
+			font-size: 16px
+	.com-ref__item img
+		width: 100%
+@media screen and (min-width: 1281px) and (max-width: 1390px)
+	.paidfor__cards .page__left
+		left: 0
+	.paidfor__cards .page__right
+		right: 0
+@media screen and (min-width: 981px)
+	.com-ref__item
+		&:hover
+			color: $orange
+			background: #2B2B2B
